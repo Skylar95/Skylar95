@@ -5,8 +5,7 @@ tagline: "cn"
 description: "reason_W成龙| For Reason,For Real"  
 baseurl: ""
 url: "http://reasonW.github.io"  
-encoding: UTF-8
-# About/contact
+ # About/contact
 owner: 
   name: "reasonW "
   email: charlewander@gmail.com
