@@ -8,6 +8,7 @@ description: mser
 ---
 
 #视觉报告—分割篇
+
 图像中的显著属性变化通常反映了这个属性的重要性和影响<br>
 常见的情况有：深度不连续，表面方向不连续，物质属性变化，场景照明变化<br>
 优秀的分割算法可以大幅度减少数据量
@@ -15,14 +16,14 @@ description: mser
 ## OpenCV 
 经典分割方法<br>
 
-###基于边缘分割
+### 基于边缘分割
 实际场景中图像边缘往往是各种类型的边缘及模糊化后的结果组合，且实际信号噪声较多。<br>
 噪声和边缘都属于高频噪声，难用频带取舍。
 
 - 边界分割法
  &emsp; &emsp;**点+线+边缘检测**<br>
 可以加一些图像增强或腐蚀膨胀等形态学处理，强化或弱化目标边界，去噪
-![分割示意图](/home/charle/Pictures/seg/opencv_3.png)
+![分割示意图](..2017-02-04-img/1_1.png)
 
  |一阶算子 |介绍| | |
  |-|-|-|-|
@@ -64,10 +65,10 @@ description: mser
 >> - 基于熵的二值化方法
 >> - 局部自适应
 
-###基于区域分割
+### 基于区域分割
 ![分割示意图](/home/charle/Pictures/seg/opencv_2.png)
 
-####区域生长法
+#### 区域生长法
  区域生长的一致性描述是区域生长法的基本准则，一般是灰度，也可以考虑颜色/纹理/形状等其他属性<br>
  基于阈值的方法是基于单个点的特点。基于区域的方法考虑到相邻点的一致性。
 
@@ -101,7 +102,7 @@ description: mser
 方法2：把图像分割成灰度固定的区域，设两邻接区域共同边界长度位B，把两区域共同边界线两侧灰度差小于给定值部分的长度设为L，若`L/B>T2`则合并<br>
 
 
-####区域分裂<br>
+#### 区域分裂<br>
 原始图像&emsp;&emsp;&emsp;&emsp;模糊滤波&emsp;&emsp;&emsp;&emsp;分裂合并&emsp;&emsp;&emsp;分裂扩张<br>
 ![分割示意图](/home/charle/Pictures/seg/opencv_region.png)
 区域分裂与区域合并相反<br>
@@ -125,28 +126,28 @@ description: mser
 |运动分割| 差分（时空灰度梯度）/光流（运动场）|
 |特殊工具||
 |人工智能方法
-###运动分割
-####差分
+### 运动分割
+#### 差分
 时-空灰度和梯度信息
-####光流
+#### 光流
 
-###特殊工具分割
-####小波
-####马尔科夫随机场
-####遗传算法
-###神经网络/Kmeans/主动轮廓模型(能量函数) 
-###SaliencyCut <br>
+### 特殊工具分割
+#### 小波
+#### 马尔科夫随机场
+#### 遗传算法
+### 神经网络/Kmeans/主动轮廓模型(能量函数) 
+### SaliencyCut <br>
 ![分割示意图](/home/charle/Pictures/seg/opencv_1.png)<br>
 [Global Contrast Based Salient Region Detection](http://ieeexplore.ieee.org/document/6871397/?arnumber=6871397&tag=1)<br>
 _南开程明明 [download](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6871397)
 
 参考 ：[图像分割](chrome-extension://gbkeegbaiigmenfmjfclcdgdpimamgkj/views/app.html)
 
-##PCL
+## PCL
 因为维度的增加，是的分割成为三维图像对比二维图像的最大优势。使得最优分割成为可能<br>
 ![分割示意图](/home/charle/Pictures/seg/pcl_1.png)
 
-###Ransac算法
+### Ransac算法
 随机采样一致,找平面,找线,找圆柱等 可以处理噪声较多的情况<br>
 ![分割示意图](/home/charle/Pictures/seg/pcl_ransac.png)<br>
 
@@ -173,7 +174,7 @@ _南开程明明 [download](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=
   ![分割示意图](/home/charle/Pictures/seg/pcl_ransac2.png)<br>
 >
 
-###邻近信息
+### 邻近信息
 - kdTree & OcTree<br>
 搜索策略,建立相邻关系
   >  
@@ -240,21 +241,21 @@ _南开程明明 [download](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=
   reg.extract (clusters);<br>
 >
 
-###minCut算法
+### minCut算法
 图论
   ![分割示意图](/home/charle/Pictures/seg/pcl_mincut.png)<br>
 
-###超体聚类
+### 超体聚类
 类似于超像素的概念
 超体聚类八叉树划分
   ![分割示意图](/home/charle/Pictures/seg/pcl_super.png)<br>
   不同晶体间的邻接关系
   ![分割示意图](/home/charle/Pictures/seg/pcl_super2.png)<br>
 
-###基于形态学
+### 基于形态学
   ![分割示意图](/home/charle/Pictures/seg/pcl_xingtai.png)<br>
 
-###基于凹凸性
+### 基于凹凸性
 根据超体聚类之后不同的晶体计算凹凸关系,进行分割<br>
   ![分割示意图](/home/charle/Pictures/seg/pcl_auto.png)<br>
   只允许区域跨越凸边增长<br>
