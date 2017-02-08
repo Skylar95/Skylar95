@@ -66,9 +66,11 @@ description: mser
 >> - 局部自适应
 
 ### 基于区域分割
+
 ![分割示意图](https://github.com/reasonW/reasonW.github.io/blob/master/_posts/2017-02-04-img/1_3.png?raw=true)
 
 #### 区域生长法
+
  区域生长的一致性描述是区域生长法的基本准则，一般是灰度，也可以考虑颜色/纹理/形状等其他属性<br>
  基于阈值的方法是基于单个点的特点。基于区域的方法考虑到相邻点的一致性。
 
