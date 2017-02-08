@@ -1,11 +1,11 @@
 # Site settings
 title: 求仁得仁
-header-img: "img/1.jpg"
+header-img: "img/2.jpg"
 tagline: "cn"  
 description: "reason_W成龙| For Reason,For Real"  
 baseurl: ""
 url: "http://reasonW.github.io"  
-
+encoding: UTF-8
 # About/contact
 owner: 
   name: "reasonW "
