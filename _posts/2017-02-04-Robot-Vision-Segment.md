@@ -121,25 +121,20 @@ description: mser
 >>3.在A中寻找所有与a连通的点，并移到a中，若没有找到，重复2，寻找下一个连通域。
 >>4.重复3，迭代寻找新的连通点。
 
-|其他分割|如|
-|-|-|
-|运动分割| 差分（时空灰度梯度）/光流（运动场）|
-|特殊工具||
-|人工智能方法
-### 运动分割
-#### 差分
-时-空灰度和梯度信息
-#### 光流
-
-### 特殊工具分割
-#### 小波
-#### 马尔科夫随机场
-#### 遗传算法
-### 神经网络/Kmeans/主动轮廓模型(能量函数) 
 ### SaliencyCut <br>
 ![分割示意图](https://github.com/reasonW/reasonW.github.io/blob/master/_posts/2017-02-04-img/1_4_saliency.png?raw=true)<br>
 [Global Contrast Based Salient Region Detection](http://ieeexplore.ieee.org/document/6871397/?arnumber=6871397&tag=1)<br>
 _南开程明明 [download](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6871397)
+
+### 特殊工具分割
+ - 小波
+ - 马尔科夫随机场
+ - 遗传算法
+ - 神经网络/Kmeans/主动轮廓模型(能量函数) 
+
+### 运动分割
+ |差分（时空灰度梯度）|光流（运动场）|
+ |-|-|
 
 参考 ：[图像分割](chrome-extension://gbkeegbaiigmenfmjfclcdgdpimamgkj/views/app.html)
 
