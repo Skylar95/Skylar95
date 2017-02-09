@@ -71,7 +71,6 @@ sudo mentohust
 ```
 	sudo apt install chromium-browser
 	sudo apt remove firefox libreoffice-common
-
 ```
 
 - wps
@@ -133,7 +132,6 @@ libreoffice对ppt啥的支持很不友好，建议换成wps，而且这玩意儿
 	cd build
 	cmake ..
 	make
-
 ```
 &emsp;&emsp;这底下要分别配置从命令行打开，图标打开，活动打开输入中文
 
@@ -158,8 +156,7 @@ libreoffice对ppt啥的支持很不友好，建议换成wps，而且这玩意儿
 <br>&emsp;&emsp;修改为
  
 ```
-Exec=bash -c "LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text %F"
-
+	Exec=bash -c "LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text %F"
 ```
 <br>&emsp;&emsp;将[Desktop Action Window]中的字符串
  
