@@ -4,7 +4,7 @@ title: Robot Vision Tool
 date: 2017-2-4
 categories: blog
 tags: [OpenCV,PCL,OpenNI]
-description: mser
+description: vision 总结
 ---
 
 

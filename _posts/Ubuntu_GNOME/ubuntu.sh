@@ -1,4 +1,9 @@
 sudo dpkg -i mentohust_0.3.4-1_amd64.deb
+#sudo add-apt-repository ppa:hanipouspilot/rtlwifi
+#sudo apt-get update
+#sudo apt-get install rtlwifi-new-dkms linux-firmware
+sudo apt install bcmwl-kernel-source 
+
 sudo apt install chromium-browser
 sudo apt remove firefox libreoffice-*
 sudo dpkg -i wps-office_10.1.0.5672~a21_amd64.deb
@@ -35,13 +40,14 @@ sudo gedit /usr/share/applications/sublime_text.desktop
 # Exec=/opt/sublime_text/sublime_text --command new_file
 # 修改为
 # Exec=bash -c "LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text --command new_file"
+
 sudo apt-get remove unity-webapps-common
 sudo apt-get remove libreoffice-common
 sudo apt remove evolution
 sudo apt-get remove thunderbird totem rhythmbox empathy brasero simple-scan gnome-mahjongg aisleriot
 sudo apt remove transmission-common  gnome-sudoku deja-dup gnome-orca
 sudo apt install  qml-module-ubuntu-web=0.23+16.04.20160413-0ubuntu1 --reinstall
-sudo apt-get install unity-tweak-tool
+# sudo apt-get install unity-tweak-tool
 sudo add-apt-repository -y ppa:maarten-baert/simplescreenrecorder
 sudo apt-get update
 sudo apt-get install simplescreenrecorder
@@ -54,10 +60,6 @@ sudo apt-get install ultra-flat-icons-orange
 sudo cp themes/Xenlism-Minimalism/ /usr/share/themes/
  
 
-#sudo add-apt-repository ppa:hanipouspilot/rtlwifi
-#sudo apt-get update
-#sudo apt-get install rtlwifi-new-dkms linux-firmware
-sudo apt install bcmwl-kernel-source 
 
 # cuda,最好还是去官网下最新的cuda
 sh cuda_8.0.44_linux.run --override

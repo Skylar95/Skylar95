@@ -4,7 +4,7 @@ title: Robot Vision Segment
 date: 2017-2-4
 categories: blog
 tags: [OpenCV,PCL]
-description: mser
+description: vision 总结
 ---
 
 #视觉报告—分割篇
