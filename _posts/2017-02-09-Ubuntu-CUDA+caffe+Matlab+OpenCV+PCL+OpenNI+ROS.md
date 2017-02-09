@@ -283,14 +283,6 @@ sudo apt install cmake-gui
 	git clone https://github.com/opencv/opencv.git
 	cd opencv
 	git checkout 3.1.0
-```
-or
-
-```
-	git checkout 3.2.0
-```
-
-```
 	git clone https://github.com/opencv/opencv_contrib.git
 	cd opencv_contrib
 	git checkout 3.1.0
@@ -298,7 +290,12 @@ or
 or
 
 ```
-	git checkout 3.2.0
+	git clone https://github.com/opencv/opencv.git
+	cd opencv
+	git checkout 3.1.0
+	git clone https://github.com/opencv/opencv_contrib.git
+	cd opencv_contrib
+ 	git checkout 3.2.0
 ```
 
 ```
