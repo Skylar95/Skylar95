@@ -133,6 +133,8 @@ cd src
 catkin_init_workspace
 cd ..
 catkin_make
+sudo apt install ros-kinetic-openni2-launch
+sudo apt install ros-kinetic-openni-launch
 
 # download cudnnV5.1.tar.gz
 #cudnn

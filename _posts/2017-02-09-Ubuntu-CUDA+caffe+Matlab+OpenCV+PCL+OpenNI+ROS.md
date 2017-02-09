@@ -113,6 +113,8 @@ description: Ubuntu setting tutorial
 	catkin_init_workspace
 	cd ..
 	catkin_make
+	sudo apt install ros-kinetic-openni2-launch
+	sudo apt install ros-kinetic-openni-launch
 ```
 
 ## cudnn

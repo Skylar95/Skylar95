@@ -41,7 +41,8 @@ sudo gedit /etc/hosts
 
 依次把`google.com`换成 `google.com.hk`,`googleusercontent.com`,`googleapis.com`
 
-##第三步
+## 第三步
+
 ???怎么会有第三步
 
 稍等一会儿就可以直接[google](https://www.google.com.hk/webhp?sourceid=chrome-instant&ion=1&ie=UTF-8&pli=1&rct=j#newwindow=1&safe=strict&q=Hello+Google) 了
