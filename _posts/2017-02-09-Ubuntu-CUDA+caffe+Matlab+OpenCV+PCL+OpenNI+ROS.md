@@ -18,15 +18,15 @@ description: Ubuntu setting tutorial
 ```
 	sh cuda_8.0.61_375.26_linux.run --override
 ```
-then put 's' still to 100% or 'PgDn','q'to quit description
-输入`accept`接受条款
-输入`n`不安装nvidia图像驱动，之前已经安装过了//此处一定要选择n
-输入`y`安装cuda 8.0工具
-回车确认cuda默认安装路径：/usr/local/cuda-8.0
-输入`y`用sudo权限运行安装，输入密码
-输入`y`或者n安装或者不安装指向/usr/local/cuda的符号链接
-输入`y`安装CUDA 8.0 Samples，以便后面测试
-回车确认CUDA 8.0 Samples默认安装路径：
+<br>then put 's' still to 100% or 'PgDn','q'to quit description
+<br>输入`accept`接受条款
+<br>输入`n`不安装nvidia图像驱动，之前已经安装过了//此处一定要选择n
+<br>输入`y`安装cuda 8.0工具
+<br>回车确认cuda默认安装路径：/usr/local/cuda-8.0
+<br>输入`y`用sudo权限运行安装，输入密码
+<br>输入`y`或者n安装或者不安装指向/usr/local/cuda的符号链接
+<br>输入`y`安装CUDA 8.0 Samples，以便后面测试
+<br>回车确认CUDA 8.0 Samples默认安装路径：
 
 - 添加路径
 
@@ -67,8 +67,10 @@ then put 's' still to 100% or 'PgDn','q'to quit description
 	sudo cp -r Matlab_Linux/ShortCut /usr/local/MATLAB/R2015b 
 	sudo cp Matlab_Linux/ShortCut/Matlab_2015b.desktop /usr/share/applications/
 
+
 ```
 - 整理一下
+
 ```
 	sudo apt-get update  
 	sudo apt-get upgrade  
@@ -178,13 +180,12 @@ then put 's' still to 100% or 'PgDn','q'to quit description
 ```
 
 >	if Caffe didn't see hdf5.h when compiling<br>
-	--- INCLUDE_DIRS := \$(PYTHON_INCLUDE) /usr/local/include<br>
-	+++ INCLUDE_DIRS := \$(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial/<br>
-	 and rename hdf5_hl and hdf5 to hdf5_serial_hl and hdf5_serial in the Makefile:
-
->	--- LIBRARIES += glog gflags protobuf boost_system boost_filesystem m hdf5_hl hdf5<br>
-	+++ LIBRARIES += glog gflags protobuf boost_system boost_filesystem m hdf5_serial_hl hdf5_serial<br>
-	More about the bug fix [here](https://gist.github.com/wangruohui/679b05fcd1466bb0937f#fix-hdf5-naming-problem).<br>
+--- INCLUDE_DIRS := \$(PYTHON_INCLUDE) /usr/local/include<br>
++++ INCLUDE_DIRS := \$(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial/<br>
+and rename hdf5_hl and hdf5 to hdf5_serial_hl and hdf5_serial in the Makefile:
+--- LIBRARIES += glog gflags protobuf boost_system boost_filesystem m hdf5_hl hdf5<br>
++++ LIBRARIES += glog gflags protobuf boost_system boost_filesystem m hdf5_serial_hl hdf5_serial<br>
+More about the bug fix [here](https://gist.github.com/wangruohui/679b05fcd1466bb0937f#fix-hdf5-naming-problem).<br>
 
 ```
 	make test -j $(($(nproc) + 1))
@@ -316,8 +317,7 @@ sudo subl /usr/local/cuda/include/host_config.h
 	usr/lib/libmpi_cxx.so.1: error adding symbols: DSO missing from command line
 ```
 
-** 知道了原因就好办了,编译的时候加上mpi链接就行
-CMakeLists.txt里面加上**
+**知道了原因就好办了,编译的时候加上mpi链接就行,CMakeLists.txt里面加上**
 
 > SET(CMAKE_C_COMPILER mpicc)<br>
 SET(CMAKE_CXX_COMPILER mpicxx)<br>
