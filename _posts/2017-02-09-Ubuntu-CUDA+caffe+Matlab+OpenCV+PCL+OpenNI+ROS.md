@@ -278,6 +278,30 @@ sudo apt install cmake-gui
 	mkdir build && cd build
 	sudo apt install libprotobuf-c-dev 
 	sudo apt install libprotobuf-c1
+```
+```
+	git clone https://github.com/opencv/opencv.git
+	cd opencv
+	git checkout 3.1.0
+```
+or
+
+```
+	git checkout 3.2.0
+```
+
+```
+	git clone https://github.com/opencv/opencv_contrib.git
+	cd opencv_contrib
+	git checkout 3.1.0
+```
+or
+
+```
+	git checkout 3.2.0
+```
+
+```
 	cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules  -DBUILD_opencv_dnn=ON -DBUILD_EXAMPLES=ON -DBUILD_PNG=ON -DINSTALL_C_EXAMPLES=ON  -DWITH_OPENNI=ON -DWITH_OPENNI2=ON ..
 ```
 如果openni2没有编译上,就过一会儿再编译一次
