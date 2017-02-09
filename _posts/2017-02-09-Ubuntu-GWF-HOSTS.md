@@ -7,11 +7,11 @@ tags: [UbuntuGnome]
 description: Ubuntu setting tutorial
 ---
 
-# 如何配置一个实用又装x的Ubuntu(二) chrome+hosts翻墙
+# 如何配置一个实用又装x的Ubuntu(二) chrome+hosts两步翻墙
 
 ![](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-09-img/2_1.png?raw=true)<br>
 hosts翻墙,首先要找到一个好用且稳定的hosts
-<br>以前一直是百度,排第一的那个,后来发现不太好,就换了github上的这个[hosts](https://github.com/racaljk/hosts/blob/master/hosts) 
+<br>以前一直是百度,排第一的那个[hosts](https://laod.cn/hosts/2016-google-hosts.html),后来换了github上的这个[hosts](https://github.com/racaljk/hosts/blob/master/hosts) 
 
 ## 第一步
 - Ubuntu
