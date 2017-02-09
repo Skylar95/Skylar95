@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ubuntu Gnome
+title: Ubuntu GNOME
 date: 2017-2-9
 categories: blog
 tags: [UbuntuGnome]
