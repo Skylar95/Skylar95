@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Robot Vision Segment
-date: 2017-2-4
+title: Ubuntu Gnome
+date: 2017-2-9
 categories: blog
 tags: [UbuntuGnome]
 description: Ubuntu setting tutorial
@@ -203,15 +203,15 @@ shell拓展
 	sudo apt install gnome-shell-extensions
 ```
 - On:
-  - Alternatetab
-  - Applications menu
-  - Auto move windows
-  - Hide top bar
-  - Launch new instance
-  - Openenweather
-  - Places status indicator
-  - Screenshot window sizer
-  - Taskbar
+	- Alternatetab
+	- Applications menu
+	- Auto move windows
+	- Hide top bar
+	- Launch new instance
+	- Openenweather
+	- Places status indicator
+	- Screenshot window sizer
+	- Taskbar
     - 概览
 		- 任务打开
 		- 工作区按钮打开
@@ -223,12 +223,12 @@ shell拓展
 		- 应用视图按钮关闭
   	- 面板 
 		- 面板背景颜色和不透明度自己调整成透明
-  - User themes
+	- User t[hemes
 - Off:
-  - Native window placement
-  - Removable drive menu
-  - Window list
-  - Workspace indicator
-  - Windownavigator
+	- Native window placement
+	- Removable drive menu
+	- Window list
+	- Workspace indicator
+	- Windownavigator
 
 
