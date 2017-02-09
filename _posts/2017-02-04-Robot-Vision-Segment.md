@@ -27,10 +27,10 @@ description: mser
 
  |一阶算子 |介绍| | |
  |-|-|-|-|
-|Roberts|2*2四邻域差分寻找边缘|无平滑，噪声较敏感| ![分割示意图](https://github.com/reasonW/reasonW.github.io/blob/master/_posts/2017-02-04-img/1_1_roberts.png?raw=true)|
-|Sobel/Prewitt| 3*3邻域卷积梯度微分，处理垂直和水平边缘|处理灰度渐变低噪声，定位校准| ![分割示意图](https://github.com/reasonW/reasonW.github.io/blob/master/_posts/2017-02-04-img/1_1_sobel.png?raw=true)|
- |Log|先平滑，拉氏变换后求二阶积分再卷积| 消除尺度小于σ的图像强度变化，计算量小，易丢失细节|  ![分割示意图](https://github.com/reasonW/reasonW.github.io/blob/master/_posts/2017-02-04-img/1_1_log.png?raw=true)|
-|Canny| 准高斯函数做平滑，带方向一阶微分算子定位导数最大值|检测弱边缘效果很好，运算较慢| ![分割示意图](https://github.com/reasonW/reasonW.github.io/blob/master/_posts/2017-02-04-img/1_1_canny.png?raw=true)|
+|Roberts|2*2四邻域差分寻找边缘|无平滑，噪声较敏感| ![分割示意图](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-04-img/1_1_roberts.png?raw=true)|
+|Sobel/Prewitt| 3*3邻域卷积梯度微分，处理垂直和水平边缘|处理灰度渐变低噪声，定位校准| ![分割示意图](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-04-img/1_1_sobel.png?raw=true)|
+ |Log|先平滑，拉氏变换后求二阶积分再卷积| 消除尺度小于σ的图像强度变化，计算量小，易丢失细节|  ![分割示意图](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-04-img/1_1_log.png?raw=true)|
+|Canny| 准高斯函数做平滑，带方向一阶微分算子定位导数最大值|检测弱边缘效果很好，运算较慢| ![分割示意图](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-04-img/1_1_canny.png?raw=true)|
 
 
  &emsp; &emsp;**检测完提取**<br>
@@ -48,7 +48,7 @@ description: mser
 其他还有hough变换，图搜索，动态规划等
 
 ##阈值分割<br>
-![分割示意图](https://github.com/reasonW/reasonW.github.io/blob/master/_posts/2017-02-04-img/1_2.png?raw=true)
+![分割示意图](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-04-img/1_2.png?raw=true)
 
 **阈值分割算法实际上就是设定阈值的矩阵二值化，所以这个输入的灰度矩阵可以变成以0:255为范围的任何其他矩阵<br>**
 **比如速度矩阵，深度矩阵，明度矩阵等等以及其他具有统计特性的矩阵**<br>
@@ -67,7 +67,7 @@ description: mser
 
 ### 基于区域分割
 
-![分割示意图](https://github.com/reasonW/reasonW.github.io/blob/master/_posts/2017-02-04-img/1_3.png?raw=true)
+![分割示意图](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-04-img/1_3.png?raw=true)
 
 #### 区域生长法
 
@@ -106,7 +106,7 @@ description: mser
 
 #### 区域分裂<br>
 原始图像&emsp;&emsp;&emsp;&emsp;模糊滤波&emsp;&emsp;&emsp;&emsp;分裂合并&emsp;&emsp;&emsp;分裂扩张<br>
-![分割示意图](https://github.com/reasonW/reasonW.github.io/blob/master/_posts/2017-02-04-img/1_3_split.png?raw=true)
+![分割示意图](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-04-img/1_3_split.png?raw=true)
 区域分裂与区域合并相反<br>
 先假设整个图像是一个对象，不满足一致性准则，则分裂（一般是均分成4个子图像），重复，直至所有区域满足一致性准则。像正方形的四叉树分裂
 #### 区域分裂+合并
@@ -124,7 +124,7 @@ description: mser
 >>4.重复3，迭代寻找新的连通点。
 
 ### SaliencyCut <br>
-![分割示意图](https://github.com/reasonW/reasonW.github.io/blob/master/_posts/2017-02-04-img/1_4_saliency.png?raw=true)<br>
+![分割示意图](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-04-img/1_4_saliency.png?raw=true)<br>
 [Global Contrast Based Salient Region Detection](http://ieeexplore.ieee.org/document/6871397/?arnumber=6871397&tag=1)<br>
 _南开程明明 [download](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6871397)
 
@@ -142,11 +142,11 @@ _南开程明明 [download](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=
 
 ## PCL
 因为维度的增加，是的分割成为三维图像对比二维图像的最大优势。使得最优分割成为可能<br>
-![分割示意图](https://github.com/reasonW/reasonW.github.io/blob/master/_posts/2017-02-04-img/2.png?raw=true)
+![分割示意图](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-04-img/2.png?raw=true)
 
 ### Ransac算法
 随机采样一致,找平面,找线,找圆柱等 可以处理噪声较多的情况<br>
-![分割示意图](https://github.com/reasonW/reasonW.github.io/blob/master/_posts/2017-02-04-img/2_1.png?raw=true)<br>
+![分割示意图](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-04-img/2_1.png?raw=true)<br>
 
 使用方法:
 >
@@ -168,7 +168,7 @@ _南开程明明 [download](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=
   seg.setInputCloud (cloud);<br>
   //分割点云<br>
   seg.segment (*inliers, *coefficients);<br>
-  ![分割示意图](https://github.com/reasonW/reasonW.github.io/blob/master/_posts/2017-02-04-img/2_1_youtube.png?raw=true)<br>
+  ![分割示意图](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-04-img/2_1_youtube.png?raw=true)<br>
 >
 
 ### 邻近信息
@@ -217,8 +217,8 @@ _南开程明明 [download](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=
   >
 - 区域增长
 可以自定义准则,如法线,曲率,颜色,距离等等<br>
-  ![分割示意图](https://github.com/reasonW/reasonW.github.io/blob/master/_posts/2017-02-04-img/2_2_region_chair.png?raw=true) 
-  ![分割示意图](https://github.com/reasonW/reasonW.github.io/blob/master/_posts/2017-02-04-img/2_2_region_corridor.png?raw=true)<br>
+  ![分割示意图](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-04-img/2_2_region_chair.png?raw=true) 
+  ![分割示意图](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-04-img/2_2_region_corridor.png?raw=true)<br>
 >
  //一个点云团队列，用于存放聚类结果<br>
   std::vector <pcl::PointIndices> clusters;<br>
@@ -240,22 +240,22 @@ _南开程明明 [download](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=
 
 ### minCut算法
 图论
-  ![分割示意图](https://github.com/reasonW/reasonW.github.io/blob/master/_posts/2017-02-04-img/2_3.png?raw=true)<br>
+  ![分割示意图](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-04-img/2_3.png?raw=true)<br>
 
 ### 超体聚类
 类似于超像素的概念
 超体聚类八叉树划分
-  ![分割示意图](https://github.com/reasonW/reasonW.github.io/blob/master/_posts/2017-02-04-img/2_4.png?raw=true)<br>
+  ![分割示意图](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-04-img/2_4.png?raw=true)<br>
   不同晶体间的邻接关系
-  ![分割示意图](https://github.com/reasonW/reasonW.github.io/blob/master/_posts/2017-02-04-img/2_4_super_tree.png?raw=true)<br>
+  ![分割示意图](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-04-img/2_4_super_tree.png?raw=true)<br>
 
 ### 基于凹凸性
 根据超体聚类之后不同的晶体计算凹凸关系,进行分割<br>
-  ![分割示意图](https://github.com/reasonW/reasonW.github.io/blob/master/_posts/2017-02-04-img/2_5.png?raw=true)<br>
+  ![分割示意图](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-04-img/2_5.png?raw=true)<br>
   只允许区域跨越凸边增长<br>
-  ![分割示意图](https://github.com/reasonW/reasonW.github.io/blob/master/_posts/2017-02-04-img/2_5_convex.png?raw=true)<br>
+  ![分割示意图](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-04-img/2_5_convex.png?raw=true)<br>
   完美效果...<br>
-  ![分割示意图](https://github.com/reasonW/reasonW.github.io/blob/master/_posts/2017-02-04-img/2_5_convex_perfect.png?raw=true)<br>
+  ![分割示意图](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-04-img/2_5_convex_perfect.png?raw=true)<br>
 
 ### 基于形态学
-  ![分割示意图](https://github.com/reasonW/reasonW.github.io/blob/master/_posts/2017-02-04-img/2_6.png?raw=true)<br>
+  ![分割示意图](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-04-img/2_6.png?raw=true)<br>
