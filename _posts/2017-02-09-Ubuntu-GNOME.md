@@ -39,10 +39,13 @@ description: Ubuntu setting tutorial
 - menthust 
 校园网，要用锐捷,mentohust挺方便的，你要是找不到下载，可以发私信找我要，github,gmail都行。<br>
 
-```sudo dpkg -i mentohust_0.3.4-1_amd64.deb ```
+```
+sudo dpkg -i mentohust_0.3.4-1_amd64.deb ```
 <br>然后<br>
 
-``` sudo mentohust```
+``` 
+sudo mentohust
+```
 <br>第一次使用要配置一遍参数，以后就不用配置了，直接命令行就行。
 <br>首先选择网卡,选第一个就行，默认是有线网卡，我的这个叫 `enps0`
 <br>然后应该是登录啥的，一个选择二次认证，另一个选择锐捷就行，这是锐捷的登录机制，不多研究
@@ -55,7 +58,11 @@ description: Ubuntu setting tutorial
 <br> 当然还可以直接插不需要锐捷认证的网线联网。。。
 
  - 无线驱动
-<br> 方法1. ```sudo apt install bcmwl-kernel-source ```
+<br> 方法1. 
+
+```
+	sudo apt install bcmwl-kernel-source 
+```
 <br> 方法2. win键，搜索软件和更新，，在附加驱动一栏，找到无线驱动，选择并应用更改，就行。
 
 - chrome | chromium-browser
@@ -66,8 +73,9 @@ description: Ubuntu setting tutorial
 	sudo apt remove firefox libreoffice-common
 
 ```
+
 - wps
-<br>libreoffice对ppt啥的支持很不友好，建议换成wps，而且这玩意儿常年不更新，下一个安装包存起来以后这么用就行
+libreoffice对ppt啥的支持很不友好，建议换成wps，而且这玩意儿常年不更新，下一个安装包存起来以后这么用就行
 
 ```
 	sudo dpkg -i wps-office_10.1.0.5672~a21_amd64.deb
@@ -98,7 +106,7 @@ description: Ubuntu setting tutorial
 	- SublimeClang
 	- 解决无法输入中文
 
-	底下两行分别是复制安装汉化包，Package Control</br> 
+	底下两行分别是复制安装汉化包，Package Control 
 
 ```
 	cp Sublime/Default.sublime-package ~/.config/sublime-text-3/Installed\ Packages
