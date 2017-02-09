@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ubuntu CUDA+caffe+OpenCV+PCL+OpenNI+ROS+Matlab+cudnn+Tensorflow+OpenBlas
+title: Ubuntu CUDA+caffe+OpenCV+PCL+OpenNI+ROS+Matlab
 date: 2017-2-9
 categories: blog
 tags: [UbuntuGnome]
@@ -113,7 +113,7 @@ then put 's' still to 100% or 'PgDn','q'to quit description
 	catkin_make
 ```
 
-##cudnn
+## cudnn
 <br>自己下载 [cudnn](https://developer.nvidia.com/rdp/cudnn-download)
 
 ```
@@ -132,6 +132,7 @@ then put 's' still to 100% or 'PgDn','q'to quit description
 	sudo pip install six --upgrade --target="/usr/lib/python2.7/dist-packages"
 	sudo pip install --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.8.0-cp27-none-linux_x86_64.whl
 ```
+
 ## OpenBlas
 
 ```
@@ -145,6 +146,7 @@ then put 's' still to 100% or 'PgDn','q'to quit description
 	echo 'export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH' >> ~/.bashrc
 
 ```
+
 ## caffe
 
 ```
@@ -174,6 +176,7 @@ then put 's' still to 100% or 'PgDn','q'to quit description
 ```
 	make all -j $(($(nproc) + 1))
 ```
+
 >	if Caffe didn't see hdf5.h when compiling<br>
 	--- INCLUDE_DIRS := \$(PYTHON_INCLUDE) /usr/local/include<br>
 	+++ INCLUDE_DIRS := \$(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial/<br>
@@ -188,6 +191,7 @@ then put 's' still to 100% or 'PgDn','q'to quit description
 	make runtest -j $(($(nproc) + 1))
 	make pycaffe -j $(($(nproc) + 1))
 ```
+
 ## OpenNI+OpenNI2
 
 - OpenNI
@@ -216,6 +220,7 @@ then put 's' still to 100% or 'PgDn','q'to quit description
 	cd ~/Documents/openni/NITE-Bin-Dev-Linux-x64-v1.5.2.23
 	sudo sh ./install.sh
 ```
+
 - OpenNI2
 <br>自己点开下[OpenNI2](http://github.com/occipital/OpenNI2) [lifreenet](https://github.com/OpenKinect/libfreenect) [NITE2.0](http://www.openni.ru/openni-sdk/openni-sdk-history-2/)
 
@@ -253,6 +258,7 @@ then put 's' still to 100% or 'PgDn','q'to quit description
 ```
 然后就行了
 ![](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-09-img/3_1.png?raw=true)
+
 ## OpenCV
 
 ```
@@ -285,6 +291,7 @@ sudo subl /usr/local/cuda/include/host_config.h
 	sudo make install 
 
 ```
+
 ## PCL
 
 ```
@@ -301,14 +308,14 @@ sudo subl /usr/local/cuda/include/host_config.h
 如果openni2没有编译上,就先安装,过一会儿重启再重启再编译安装一次,一般就有了
 
 ## NOTES
-**
-我从14版本升到16版本以后,编译以前的视觉包一直报一个libmpi的错,后来才知道是系统的动态链接库管理ld因升级有了变化，主要表现为依赖的包再次依赖不会自动展开，报一个很烦人的错误
-**
+
+**我从14版本升到16版本以后,编译以前的视觉包一直报一个libmpi的错,后来才知道是系统的动态链接库管理ld因升级有了变化，主要表现为依赖的包再次依赖不会自动展开，报一个很烦人的错误**
 
 ```
 	undefined reference to symbol '_ZN3MPI8Datatype4FreeEv'
 	usr/lib/libmpi_cxx.so.1: error adding symbols: DSO missing from command line
 ```
+
 ** 知道了原因就好办了,编译的时候加上mpi链接就行
 CMakeLists.txt里面加上**
 
