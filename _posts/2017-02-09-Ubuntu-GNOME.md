@@ -37,17 +37,17 @@ description: Ubuntu setting tutorial
 以后有机会重装的话，我尽量补全<br>
 
 - menthust 
-校园网，要用锐捷,mentohust挺方便的，你要是找不到下载，可以发私信找我要，github,gmail都行。<br>
+<br>校园网，要用锐捷,mentohust挺方便的，你要是找不到下载，可以发私信找我要，github,gmail都行。 
 
 ```
-sudo dpkg -i mentohust_0.3.4-1_amd64.deb ```
-
+	sudo dpkg -i mentohust_0.3.4-1_amd64.deb 
+```
 然后
 
 ``` 
-sudo mentohust
+	sudo mentohust
 ```
-<br>第一次使用要配置一遍参数，以后就不用配置了，直接命令行就行。
+第一次使用要配置一遍参数，以后就不用配置了，直接命令行就行。
 <br>首先选择网卡,选第一个就行，默认是有线网卡，我的这个叫 `enps0`
 <br>然后应该是登录啥的，一个选择二次认证，另一个选择锐捷就行，这是锐捷的登录机制，不多研究
 <br>账号就是你的锐捷账号，我是10位数字学号，接着密码
