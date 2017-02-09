@@ -41,7 +41,8 @@ description: Ubuntu setting tutorial
 
 ```
 sudo dpkg -i mentohust_0.3.4-1_amd64.deb ```
-<br>然后<br>
+
+然后
 
 ``` 
 sudo mentohust
