@@ -38,8 +38,10 @@ description: Ubuntu setting tutorial
 
 - menthust 
 校园网，要用锐捷,mentohust挺方便的，你要是找不到下载，可以发私信找我要，github,gmail都行。<br>
+
 ```sudo dpkg -i mentohust_0.3.4-1_amd64.deb ```
 <br>然后<br>
+
 ``` sudo mentohust```
 <br>第一次使用要配置一遍参数，以后就不用配置了，直接命令行就行。
 <br>首先选择网卡,选第一个就行，默认是有线网卡，我的这个叫 `enps0`
@@ -58,6 +60,7 @@ description: Ubuntu setting tutorial
 
 - chrome | chromium-browser
 <br>用了大半年firefox，后来就弃坑改 chrome了，主要是同步方便
+
 ```
 	sudo apt install chromium-browser
 	sudo apt remove firefox libreoffice-common
@@ -65,12 +68,14 @@ description: Ubuntu setting tutorial
 ```
 - wps
 <br>libreoffice对ppt啥的支持很不友好，建议换成wps，而且这玩意儿常年不更新，下一个安装包存起来以后这么用就行
+
 ```
 	sudo dpkg -i wps-office_10.1.0.5672~a21_amd64.deb
 ```
 
 - Sogou
 <br>比fcitx带的sunpinyin好用，最主要是熟悉，同上，常年备安装包，防止连不上网的时候没法打字
+
 ```
 	sudo dpkg -i sogoupinyin_2.1.0.0082_amd64.deb 
 	sudo apt install -f
@@ -78,6 +83,7 @@ description: Ubuntu setting tutorial
 
 - uGet+aria2
 <br>下载神器，同上，我常年备份，你可以自己google一下安装
+
 ```
 	sudo dpkg -i uget_2.0.8-0ubuntu0~trusty_amd64.deb
 	sudo dpkg -i aria2_1.18.1-1_amd64.deb
@@ -137,37 +143,39 @@ description: Ubuntu setting tutorial
 ```
 
 <br>&emsp;&emsp;将[Desktop Entry]中的字符串
-<br>
+ 
 ```
 	Exec=/opt/sublime_text/sublime_text %F
 ```
 <br>&emsp;&emsp;修改为
-<br>
+ 
 ```
 Exec=bash -c "LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text %F"
+
 ```
 <br>&emsp;&emsp;将[Desktop Action Window]中的字符串
-<br>
+ 
 ```
 	Exec=/opt/sublime_text/sublime_text -n
 ```
 <br>&emsp;&emsp;修改为
-<br>
+ 
 ```
 	Exec=bash -c "LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text -n"
 ```
 <br>&emsp;&emsp;将[Desktop Action Document]中的字符串
-<br>
+
 ```
 	Exec=/opt/sublime_text/sublime_text --command new_file
 ```
 <br>&emsp;&emsp;修改为
-<br>
+
 ```		
 	Exec=bash -c "LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text --command new_file"
 ```
 
 - simplescreenrecorder | 录屏软件
+
 ```
 	sudo add-apt-repository -y ppa:maarten-baert/simplescreenrecorder
 	sudo apt-get update
@@ -176,6 +184,7 @@ Exec=bash -c "LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime
 
 - indicator-multiload | 系统状态监视器
 <br>默认固定在后台，unity的右上角，gnome的左下角会看到，很直观
+
 ```
 	sudo add-apt-repository ppa:indicator-multiload/stable-daily
 	sudo apt-get update
@@ -194,6 +203,7 @@ Exec=bash -c "LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime
 
 ## 主题、图标和shell拓展
 我只修改了图标,其他主题都是默认
+
 ```
 	sudo add-apt-repository ppa:noobslab/icons
 	sudo apt-get update
@@ -223,9 +233,10 @@ shell拓展
 		- 对齐自己调整
 		- 桌面按钮关闭
 		- 应用视图按钮关闭
+
   	- 面板 
 		- 面板背景颜色和不透明度自己调整成透明
-	- User t[hemes
+	- User themes
 - Off:
 	- Native window placement
 	- Removable drive menu
