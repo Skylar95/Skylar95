@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Ubuntu CUDA+caffe+OpenCV+PCL+OpenNI+ROS+Matlab
+title: Ubuntu CV+ROS+深度学习配置
+subtitle: CUDA+Caffe+OpenCV+OpenNI+ROS+PCL+Matlab
 date: 2017-2-9
 categories: blog
 tags: [UbuntuGnome]
