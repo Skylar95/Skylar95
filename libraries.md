@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "libraries"
+title: "LIBRARIES"
 description: "Robot Vision Libraries "
 header-img: "img/3.jpg"
 ---
