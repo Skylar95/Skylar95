@@ -7,6 +7,9 @@ tags: [UbuntuGnome]
 description: Ubuntu setting tutorial
 ---
 
+* content
+{:toc}
+
 # 如何配置一个实用又装x的Ubuntu(一)系统-实用配置-美化
 
 以前一直用14.04版本的，试过换到16.04，但几个视觉的包一直报错，就不再尝试了。今年过完年感觉16版本差不多了，就开始升级，所有错误一遍过，没有从头来，还是很开心的。
