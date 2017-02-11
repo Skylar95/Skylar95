@@ -62,3 +62,6 @@ ga_domain: auto
 bing_verify:
 
 # Links to include in footer navigation
+
+#excerpt
+excerpt_separator: "\n\n\n\n"
