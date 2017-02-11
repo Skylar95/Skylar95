@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Index"
-description: "Key Words Index | 关键词索引"  
+title: "Tags"
+description: "Key Words Tags Index | 关键词索引"  
 header-img: "img/2.jpg"  
 ---
 
