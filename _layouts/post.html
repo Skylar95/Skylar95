@@ -35,7 +35,7 @@ layout: default
 <!-- Post Content -->
 <article>
     <div class="container">
-        <div class="row">
+        <div class="left">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
 
                 {{ content }}
@@ -96,6 +96,20 @@ layout: default
                 <!-- 多说评论框 end -->
             </div>
         </div>
+       <div class="right">
+            <div class="wrap">
+                <!-- Content -->
+                <div class="side content">
+                    <div>
+                        Content
+                    </div>
+                    <ul id="content-side" class="content-ul">
+                    </ul>
+                </div>
+                <!-- 其他div框放到这里 -->
+                <!-- <div class="side">bbbb</div> -->
+            </div>
+        </div>
     </div>
 </article>
 
@@ -149,3 +163,4 @@ var duoshuoQuery = {short_name:"cnfeat"};
         }
     }
 </style>
+<script src="/js/pageContent.js" charset="utf-8"></script>
