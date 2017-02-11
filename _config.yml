@@ -59,9 +59,8 @@ comments :
 google_analytics: 
 google_verify:
 
-ga_track_id: 'UA-91795857-1'
-ga_domain: true
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+google_analytics_id: 'UA-91795857-1'
+ # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
 
 # Links to include in footer navigation
