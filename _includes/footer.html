@@ -16,7 +16,7 @@
 
                     {% if site.github_username %}
                     <li>
-                        <a href="https://github.com/{{ site.github_username }}">
+                        <a href="https://github.com/{{ site.github_username }}" title="Github">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -26,7 +26,7 @@
                     {% endif %}
                     {% if site.twitter_username %}
                     <li>
-                        <a href="https://twitter.com/{{ site.twitter_username }}">
+                        <a href="https://twitter.com/{{ site.twitter_username }}" title="teitter">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -37,10 +37,10 @@
 
                     {% if site.email %}
                     <li>
-                      <a href="mailto:charlewander@gmail.com">
+                      <a target="_blank" href="mailto:charlewander@gmail.com" title=GMail>
                         <span class="fa-stack fa-lg">
                             <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                            <i class="fa  fa-stack-1x fa-inverse">M</i>
                         </span>
                     </a>
                     </li>
@@ -48,16 +48,25 @@
                     {% endif %}
 
                     {% if site.zhihu_username %}
-                        <a href="https://www.zhihu.com/people/{{ site.zhihu_username }}">
-                                <!-- 知乎的icon用的是阿里巴巴的矢量图标库 -->
-                                <i class="iconfont">&#xe634;</i>
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/{{ site.zhihu_username }}" title="知乎">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
                         </a>
+                    </li>
                     {% endif %}
                     
                     {% if site.jianshu_username %}
-                        <a href="http://www.jianshu.com/u/{{ site.jianshu_username }}">
-                                <i class="iconfont icon-zhihu"></i>
+                    <li>
+                        <a target="_blank" href="http://www.jianshu.com/u/{{ site.jianshu_username }}" title="简书">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa f fa-stack-1x fa-inverse">简</i>
+                            </span>
                         </a>
+                    </li>
                     {% endif %}
                     
 
