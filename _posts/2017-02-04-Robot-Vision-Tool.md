@@ -7,6 +7,9 @@ tags: [OpenCV,PCL,OpenNI]
 description: vision 总结
 ---
 
+* content
+{:toc}
+
 
 # 机器人视觉报告--工具篇
 

@@ -7,6 +7,9 @@ tags: [UbuntuGnome]
 description: Ubuntu setting tutorial
 ---
 
+* content
+{:toc}
+
 # 如何配置一个实用又装x的Ubuntu(三) CV相关配置
 
 ## CUDA

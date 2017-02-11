@@ -7,6 +7,9 @@ tags: [UbuntuGnome]
 description: Ubuntu setting tutorial
 ---
 
+* content
+{:toc}
+
 # 如何配置一个实用又装x的Ubuntu(二) chrome+hosts两步翻墙
 
 ![](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-09-img/2_1.png?raw=true)<br>
