@@ -48,7 +48,7 @@ defaults:
 # Comments 
 comments :
   provider : duoshuo
-   duoshuo :
+  duoshuo :
     short_name : reason_W成龙
   disqus :
       short_name : 
