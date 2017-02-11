@@ -16,9 +16,9 @@ header-img: "img/5.jpg"
 
 ### 联系我
  
-- Blog&emsp;: [reasonw.github.io](http://reasonw.github.io/)    
-- Gmail  : [charlewander@gmail.com](mailto:charlewander@gmail.com )  
-- Github : [https://github.com/reasonW/](https://github.com/reasonW/)
+- Blog: [reasonw.github.io](http://reasonw.github.io/)    
+- Gmail: [charlewander@gmail.com](mailto:charlewander@gmail.com )  
+- Github: [https://github.com/reasonW/](https://github.com/reasonW/)
 
  
 <center>
