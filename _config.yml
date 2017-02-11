@@ -48,18 +48,13 @@ defaults:
 # Comments 
 comments :
   provider : duoshuo
-  duoshuo_username: reason_W成龙
-  duoshuo_share: true
-  duoshuo :
-    short_name : 
+   duoshuo :
+    short_name : reason_W成龙
   disqus :
       short_name : 
 
 # Analytics and webmaster tools stuff goes here
-google_analytics: 
-google_verify:
-
-google_analytics_id: 'UA-91795857-1'
+google_analytics_id: UA-91795857-1
  # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
 
