@@ -54,7 +54,7 @@ description: Ubuntu setting tutorial
 <br>首先选择网卡,选第一个就行，默认是有线网卡，我的这个叫 `enps0`
 <br>然后应该是登录啥的，一个选择二次认证，另一个选择锐捷就行，这是锐捷的登录机制，不多研究
 <br>账号就是你的锐捷账号，我是10位数字学号，接着密码
-<br>配置完就可以看到登录提示了
+<br>配置完就可以看到登录提示了<br>
 ![](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-09-img/1_3.png?raw=true)
 ![](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-09-img/1_4.png?raw=true)
 <br>前面也提到，锐捷一个比较坑的地方就是二次认证，所以看到提示成功后，还要点击系统右上角的有线连接，断开，再连接。。。或者在刚刚那个终端窗口里`ctrl^C`,再`sudo mentohust`,总之连两次才行。。。
