@@ -82,6 +82,10 @@ sudo apt install blueman  bluez bluez-cups bluez-obexd bluetooth bluez-btsco blu
 sudo apt-get install pulseaudio-module-bluetooth
 sudo cp BCM.hcd /lib/firmware/brcm/
 
+sudo mv  Franz-linux-x64-4.0.4 /opt/franz
+wget "https://cdn-images-1.medium.com/max/360/1*v86tTomtFZIdqzMNpvwIZw.png" -O franz-icon.png
+sudo cp franz-icon.png /opt/franz
+sudo cp /opt/franz/franz.desktop /usr/share/applications/franz.desktop
 
 # cuda,最好还是去官网下最新的cuda
 sh cuda_8.0.44_linux.run --override
