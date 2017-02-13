@@ -143,7 +143,7 @@ libreoffice对ppt啥的支持很不友好，建议换成wps，而且这玩意儿
 
  	自己搜一下，下载，解压出来汉化包
  	cp Sublime/Default.sublime-package ~/.config/sublime-text-3/Installed\ Packages
- 	
+
 - Package Control
 
 ```
@@ -153,7 +153,7 @@ libreoffice对ppt啥的支持很不友好，建议换成wps，而且这玩意儿
 之后其他插件可以 `shift+ctrl+p`,选择 `install package`,回车，搜索安装
 
 - Alignment
-	- ctrl+alt+A 对齐
+	- `ctrl+alt+A` 对齐
 - WakaTime
 	- 记录coding 时间，适合朋友圈装逼
 <br><br>![](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-09-img/1_6.png?raw=true)
