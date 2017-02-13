@@ -117,6 +117,7 @@ libreoffice对ppt啥的支持很不友好，建议换成wps，而且这玩意儿
 ```
 	sudo gedit /opt/franz/franz.desktop
 ```
+在里面粘贴这段内容，并保存
 
 ```
 	[Desktop Entry]
