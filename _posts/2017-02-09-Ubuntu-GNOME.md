@@ -155,7 +155,7 @@ libreoffice对ppt啥的支持很不友好，建议换成wps，而且这玩意儿
 - Alignment
 	- `ctrl+alt+A` 对齐
 - WakaTime
-	- 记录coding 时间，适合朋友圈装逼
+	- 记录coding 时间，适合朋友圈装逼,安装的时候需要输入在[官网](https://wakatime.com/)注册完获得的注册码
 <br><br>![](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-09-img/1_6.png?raw=true)
 - ConvertToUTF8
 	- 解决中文乱码
