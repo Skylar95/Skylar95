@@ -135,22 +135,50 @@ libreoffice对ppt啥的支持很不友好，建议换成wps，而且这玩意儿
 ```
 
 - **Sublime-text3**
-![](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-09-img/1_6.png?raw=true)
 
 <br>大神器,写文档看代码特别顺手，跨平台
 <br>我这里常备了几个Sublime 的package，就不用配置了，你们可以自己搜一下配置
-	- 汉化包
-	- Package Control
-	- SublimeClang
-	- 解决无法输入中文
 
-	底下两行分别是复制安装汉化包，Package Control 
+- 汉化包
 
-```
-	cp Sublime/Default.sublime-package ~/.config/sublime-text-3/Installed\ Packages
-	cp Sublime/Package\ Control.sublime-package /~/.config/sublime-text-3/Installed\ Packages
+ 	自己搜一下，下载，解压出来汉化包
+ 	cp Sublime/Default.sublime-package ~/.config/sublime-text-3/Installed\ Packages
+ 	
+- Package Control
 
 ```
+	wegt "https://packagecontrol.io/Package%20Control.sublime-package" ~/.config/sublime-text-3/Installed\ Packages
+
+```
+之后其他插件可以 `shift+ctrl+p`,选择 `install package`,回车，搜索安装
+
+- Alignment
+	- ctrl+alt+A 对齐
+- WakaTime
+	- 记录coding 时间，适合朋友圈装逼
+<br><br>![](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-09-img/1_6.png?raw=true)
+- ConvertToUTF8
+	- 解决中文乱码
+- Bracket Highlighter
+	- 括号高亮
+- OmniMarkupPreviewer 
+<br><br>![](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-09-img/1_7.png?raw=true)
+ 	- 可实现编辑markdown时，浏览器实时预览 
+	- 编辑Preferences->Package setting->OmniMarkupPreviewer->Setting user,粘贴以下内容
+```
+	{
+	  "mathjax_enabled": true,
+
+	 "renderer_options-MarkdownRenderer": {
+	     "extensions": ["tables", "fenced_code", "codehilite"]
+	 }
+
+	}
+```
+- IMEsupport #解决输入法不跟随
+- colorsublime # 主题实时预览
+- SublimeClang
+
 &emsp;&emsp;配置sublime-clang,可以实现代码补全自动提示和跳转
 
 ```
@@ -172,6 +200,7 @@ libreoffice对ppt啥的支持很不友好，建议换成wps，而且这玩意儿
 	cmake ..
 	make
 ```
+	- 解决无法输入中文
 &emsp;&emsp;这底下要分别配置从命令行打开，图标打开，活动打开输入中文
 
 ```
