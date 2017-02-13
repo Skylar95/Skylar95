@@ -134,7 +134,7 @@ libreoffice对ppt啥的支持很不友好，建议换成wps，而且这玩意儿
 ```
 
 - **Sublime-text3**
-![](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-09-img/1_4.png?raw=true)
+![](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-09-img/1_6.png?raw=true)
 
 <br>大神器,写文档看代码特别顺手，跨平台
 <br>我这里常备了几个Sublime 的package，就不用配置了，你们可以自己搜一下配置
