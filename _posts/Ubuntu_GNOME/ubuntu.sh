@@ -1,10 +1,16 @@
 sudo dpkg -i mentohust_0.3.4-1_amd64.deb
-#sudo add-apt-repository ppa:hanipouspilot/rtlwifi
-#sudo apt-get update
-#sudo apt-get install rtlwifi-new-dkms linux-firmware
-sudo apt install bcmwl-kernel-source 
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+sudo apt-get update 
+sudo apt-get install google-chrome-stable
+# -- chrome://net-internals/#hsts
+# Domain:
+# > google.com  
+# google.com.hk
+# googleusercontent.com
+# googleapis.com
 
-sudo apt install chromium-browser
+
 sudo apt remove firefox libreoffice-*
 sudo dpkg -i wps-office_10.1.0.5672~a21_amd64.deb
 sudo dpkg -i sogoupinyin_2.1.0.0082_amd64.deb 
@@ -40,6 +46,14 @@ sudo gedit /usr/share/applications/sublime_text.desktop
 # Exec=/opt/sublime_text/sublime_text --command new_file
 # 修改为
 # Exec=bash -c "LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text --command new_file"
+# Sublime Text > Preferences > Package Settings > OmniMarkupPreviewer > Settings - User
+# paste the following to remove the strikeout package.
+
+# {
+#     "renderer_options-MarkdownRenderer": {
+#         "extensions": ["tables", "fenced_code", "codehilite"]
+#     }
+# }
 
 sudo apt-get remove unity-webapps-common
 sudo apt-get remove libreoffice-common
@@ -47,7 +61,7 @@ sudo apt remove evolution
 sudo apt-get remove thunderbird totem rhythmbox empathy brasero simple-scan gnome-mahjongg aisleriot
 sudo apt remove transmission-common  gnome-sudoku deja-dup gnome-orca
 sudo apt install  qml-module-ubuntu-web=0.23+16.04.20160413-0ubuntu1 --reinstall
-# sudo apt-get install unity-tweak-tool
+sudo apt-get install unity-tweak-tool
 sudo add-apt-repository -y ppa:maarten-baert/simplescreenrecorder
 sudo apt-get update
 sudo apt-get install simplescreenrecorder
@@ -59,6 +73,14 @@ sudo apt-get update
 sudo apt-get install ultra-flat-icons-orange
 sudo cp themes/Xenlism-Minimalism/ /usr/share/themes/
  
+
+#sudo add-apt-repository ppa:hanipouspilot/rtlwifi
+#sudo apt-get update
+#sudo apt-get install rtlwifi-new-dkms linux-firmware
+sudo apt install bcmwl-kernel-source
+sudo apt install blueman  bluez bluez-cups bluez-obexd bluetooth bluez-btsco bluez-hcidump bluez-tools 
+sudo apt-get install pulseaudio-module-bluetooth
+sudo cp BCM.hcd /lib/firmware/brcm/
 
 
 # cuda,最好还是去官网下最新的cuda
@@ -133,8 +155,6 @@ cd src
 catkin_init_workspace
 cd ..
 catkin_make
-sudo apt install ros-kinetic-openni2-launch
-sudo apt install ros-kinetic-openni-launch
 
 # download cudnnV5.1.tar.gz
 #cudnn
@@ -200,4 +220,27 @@ sudo apt install cmake-gui
 ./pcl1.8_install/pcl1.8_install.sh
 
 sudo apt install ros-kinetic-openni2-camera 
+
+#sublime clang 
+cp -r Sublime/SublimeClang ~/.config/sublime-text-3/Packages
+cd ~/.config/sublime-text-3/Packages/SublimeClang
+git pull && git submodule foreach --recursive git pull origin master
+sudo apt-get install libclang-3.8
+ldconfig -p | grep clang
+cp /usr/lib/x86_64-linux-gnu/libclang-3.8.so ~/.config/sublime-text-3/Packages/SublimeClang/internals/libclang.so
+cd src
+mkdir build
+cd build
+cmake ..
+make
+
+#最后有个特别感慨的问题，以前升级到16版之后，我的这个机器人的包老是编译报错
+#mpi的问题，但一直不知道咋解决，因为在14版上没出过错。今天弄明白了，是因为系统的动态链接库管理ld因为升级有了变化
+# 主要表现为一来的包再次以来不会自动展开，还会报一个烦人的错误
+# undefined reference to symbol '_ZN3MPI8Datatype4FreeEv'
+#解决办法是在cmake里面做相应的增加
+
+# SET(CMAKE_C_COMPILER mpicc)
+# SET(CMAKE_CXX_COMPILER mpicxx)
+# target_link_libraries(mytest ${MPI_LIBRARIES})
 
