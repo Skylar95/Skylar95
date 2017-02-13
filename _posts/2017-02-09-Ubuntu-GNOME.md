@@ -101,7 +101,41 @@ libreoffice对ppt啥的支持很不友好，建议换成wps，而且这玩意儿
 	sudo apt install -f
 ```
 
+- Franz+Wechat
+
+![](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-09-img/1_5.png?raw=true)
+
+
+```
+	wget "https://github.com/meetfranz/franz-app/releases/download/4.0.4/Franz-linux-x64-4.0.4.tgz"
+	sudo mkdir /opt/franz
+	sudo tar -xf Franz-linux*.tgz -C /opt/franz
+	wget "https://cdn-images-1.medium.com/max/360/1*v86tTomtFZIdqzMNpvwIZw.png" -O franz-icon.png
+	sudo mv franz-icon.png /opt/franz
+```
+
+```
+	sudo gedit /opt/franz/franz.desktop
+```
+
+```
+	[Desktop Entry]
+	Name=Franz
+	Comment=
+	Exec=/opt/franz/Franz
+	Icon=/opt/franz/franz-icon.png
+	Terminal=false
+	Type=Application
+	Categories=Messaging,Internet
+```
+
+```
+	sudo cp /opt/franz/franz.desktop /usr/share/applications/franz.desktop
+```
+
 - **Sublime-text3**
+![](https://github.com/reasonW/MyImage/blob/master/reasonW.github.io/_posts/2017-02-09-img/1_4.png?raw=true)
+
 <br>大神器,写文档看代码特别顺手，跨平台
 <br>我这里常备了几个Sublime 的package，就不用配置了，你们可以自己搜一下配置
 	- 汉化包
@@ -199,6 +233,7 @@ libreoffice对ppt啥的支持很不友好，建议换成wps，而且这玩意儿
 	sudo apt-get update
 	sudo apt-get install indicator-multiload
 ```
+
 
 - **卸载不必要的软件**
 
