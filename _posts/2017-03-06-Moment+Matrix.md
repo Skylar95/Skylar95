@@ -72,7 +72,7 @@ description: 图像相关数学知识
 
 - 中心转换
 	<br>由于：<br>
-	$(x-b)^n=(x-a+a-b)^n=\sum\limits_{i=0}^n $
+	<center>$(x-b)^n=(x-a+a-b)^n=\sum\limits_{i=0}^n {\dbinom {n}{i}$</center>
 
 	<br>
 
