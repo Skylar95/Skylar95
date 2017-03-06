@@ -54,7 +54,8 @@ description: 图像相关数学知识
 	<br>随机变量的偏态（衡量分布不对称性）定义为其三阶中心矩:
 	<center>$ S(x)=\int _{-\infty }^{\infty }[x-E(x)]^{3}\,f(x)\,dx$</center>
 	<br>需要注意，**任何对称分布偏态为0**，归一化三阶矩被成为偏斜度，向左偏斜（分布尾部在左侧较长）具有负偏度（失效率数据常向左偏斜，如极少量的灯泡会立即烧坏），向右偏斜分布（分布尾部在右侧较长）具有正偏度（工资数据往往以这种方式偏斜，大多数人所得工资较少）。
-	![偏态](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Negative_and_positive_skew_diagrams_%28English%29.svg/400px-Negative_and_positive_skew_diagrams_%28English%29.svg.png)
+
+>	![偏态](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Negative_and_positive_skew_diagrams_%28English%29.svg/400px-Negative_and_positive_skew_diagrams_%28English%29.svg.png)
 
 
 - 峰度
@@ -62,13 +63,19 @@ description: 图像相关数学知识
 	<center>$ K(x)=\frac{\int _{-\infty }^{\infty }[x-E(x)]^{4}\,f(x)\,dx}{\sigma^2}-3$</center>
 	<br>峰度表示分布的波峰和尾部与正态分布的区别，峰度有助于初步了解数据分布的一般特征。
 	<br>完全符合正态分布的数据峰度值为0,及基线。如果样本峰度显著偏离0，就可判断此数据不是正态分布。
-	![正峰度](http://support.minitab.com/zh-cn/minitab/17/distribution_plot_positive_kurtosis.png)
+
+>	![正峰度](http://support.minitab.com/zh-cn/minitab/17/distribution_plot_positive_kurtosis.png)
 	![负峰度](http://support.minitab.com/zh-cn/minitab/17/distribution_plot_negative_kurtosis.png) 
 
 - 混合矩
 	<br>混合矩是多个变量的矩，比如协方差，协偏度，协峰度。虽然协方差只有一个，但协偏度和协峰度存在多个。
 
-
+- 中心转换
+	<br>
+	$(x-b)^{n}=(x-a+a-b)^{n}=\sum _{i=0}^{n}{{n} \choose {i}}(x-a)^{i}(a-b)^{n-i}$
+	<br>所以
+	<br>
+	$E[(x-b)^{n}]=\sum _{i=0}^{n}{{n} \choose {i}}E[(x-a)^{i}](a-b)^{n-i}$
 
 ### 图像意义
 
