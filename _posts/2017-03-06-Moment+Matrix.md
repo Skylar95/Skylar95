@@ -116,6 +116,9 @@ description: 图像相关数学知识
 ```
 
 - 中心矩
+	<br>中心矩被定义为：
+	<center>$\mu_{pq}=\int\limits_{-\infty}^{infty} \int\limits_{-\infty}^{infty} (x-\bar{x})^p (y-\bar{y})^q \,f(x,y) \,dx\,dy \quad \bar{x}=\frac{M_{10}}{M_{00}} $ </center>
+
 
 - 矩不变性
 
