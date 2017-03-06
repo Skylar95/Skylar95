@@ -159,7 +159,7 @@ $
 $</center>
 <br>协方差矩阵的特征值可以表示为：
 <center>$
-	\lambda_i = \frac{\mu'_{20}+\mu'_{02}}{2}  \pm  \frac{\sqrt{4mu'_{11}^2+(\mu'_{20}+\mu'_{02})^2}}{2}
+	\lambda_i = \frac{\mu'_{20}+\mu'_{02}}{2}  \pm  \frac{\sqrt{4\mu'_{11}^2+(\mu'_{20}+\mu'_{02})^2}}{2}
 $</center>
 
 
