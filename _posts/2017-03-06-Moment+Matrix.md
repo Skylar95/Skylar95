@@ -72,7 +72,9 @@ description: 图像相关数学知识
 
 - 中心转换
 	<br>由于：<br>
-	<center>$(x-b)^n=(x-a+a-b)^n=\sum\limits_{i=0}^n \left( \begin{array}{c} c\\r \end{array} \right) $</center>
+	<center>$(x-b)^n=(x-a+a-b)^n=\sum\limits_{i=0}^n \left( \begin{array}{c} c\\r \end{array} \right) (x-a)^i (a-b)^{n-i} $</center>
+	<br>所以：<br>
+	<center>$E[(x-b)^n]= \sum\limits_{i=0}^n \left( \begin{array}{c} c\\r \end{array} \right) E[(x-a)^i] (a-b)^{n-i} $</center>
 
 	<br>
 
