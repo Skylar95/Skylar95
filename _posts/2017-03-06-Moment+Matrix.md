@@ -74,7 +74,7 @@ description: 图像相关数学知识
 	<br>由于：<br>
 	<center>$(x-b)^n=(x-a+a-b)^n=\sum\limits_{i=0}^n \left( \begin{array}{c} c\\r \end{array} \right) (x-a)^i (a-b)^{n-i} $</center>
 	<br>所以：<br>
-	<center>$E[(x-b)^n]= \sum\limits_{i=0}^n \left( \begin{array}{c} c\\r \end{array} \right) E[(x-a)^i] (a-b)^{n-i} $</center>
+	<center>$E[(x-b)^n]= \sum\limits_{i=0}^n \left( \begin{array}{c} c\\r \end{array} \right) E[(x-a)^i](a-b)^{n-i} $</center>
 
 - 累加性
 	<br>当x和y是独立变量时，<br>
@@ -105,8 +105,8 @@ description: 图像相关数学知识
 
 > 举个栗子，Opencv中moment函数从原点矩中获得的简单图像属性
 -	面积（二值图）或灰度和（灰度图）：M00
--	质心：${\bar{x},\bar{y}={\frac{M10}{M00},\frac{M01}{M00}$ 
->
+-	质心：${ \bar{x},\bar{y }={ \frac{M10}{M00},\frac{M01}{M00} }$ 
+
 ```
  	vector<Moments> mu(contours.size() );
 	vector<Point2f> mc(contours.size() );
@@ -147,9 +147,13 @@ $
 <br>其中，图像上一点$I(x,y)$的协方差矩阵为
 <center>
 $
-	cov[I(x,y)]=
+	cov[I(x,y)]=\begin{bmatrix}
+					\mu'_{20} & \mu'_{11} \\
+					\mu'_{11} & \mu'_{02}
+					\end{bmatrix}
 $
 </center>
+
 
 - 矩不变性
 
