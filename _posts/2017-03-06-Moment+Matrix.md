@@ -92,8 +92,28 @@ description: 图像相关数学知识
 
 - 原点矩
 
-	<br>对一个二维连续函数$f(x,y)$，第（p+q）个点的矩（原点矩）被定义为
-	<center>$M_{pq} = \int\limit_{-\infty}^{\infty} \int\limit_{-\infty}^{\infty} x^p y^q \,f(x,y) \,dx \,dy ,p,q=0,1,2,...$ </center>
+	<br>对一个二维连续函数$f(x,y)$，第$(p+q)$个点的矩（原点矩）被定义为
+	<center>$M_{pq} = \int\limits_{-\infty}^{\infty} \int\limits_{-\infty}^{\infty} x^p y^q \,f(x,y) \,dx \,dy \quad \quad p,q=0,1,2,...$ </center>
+	<br>照这个思路，像素强度为$I(x,y)$的灰度图，原点矩为：
+	<center>$M_{ij}=\sum\limits_x \sum\limits_y x^i y^i I(x,y)$ </center>
+	<br>有些情况下，也可以把图像看成概率密度函数来计算 $\sum\limits_x \sum\limits_y x^i y^i I(x,y)$
+
+> 唯一性定理(Hu[1962])指出，如果$f(x,y)$是分段连续的并且仅在xy平面的有限部分中具有非零值，则存在所有阶的矩，并且矩序列$M_pq$由$f(x,y)$唯一确定。
+反之，中心矩$M_pq$唯一确定$f(x,y)$。
+
+> 在实践中，图像被概括为具有几个较低阶矩的函数。
+
+> 举个栗子，Opencv中moment函数从原点矩中获得的简单图像属性
+	-	面积（二值图）或灰度和（灰度图）：M00
+	-	质心：${x,y}={M10/M00,M01/M00}$ 
+```
+ 	vector<Moments> mu(contours.size() );
+	vector<Point2f> mc(contours.size() );
+	mu[c] = moments( contours[i], false );
+	double area=mu[c].m00 ;
+	mc[c] = Point2f( mu[c].m10/mu[c].m00 , mu[c].m01/mu[c].m00 );
+	
+```
 
 - 中心矩
 
