@@ -19,13 +19,13 @@ description: 图像相关数学知识
 ### 物理意义
 &emsp;&emsp;数学中矩的概念来自物理学。在物理学中，矩是表示距离和物理量乘积的物理量，受物理量的空间分布或安排影响。由其定义，矩通常需要一个参考点（基点或参考系）来定义距离。如力和参考点距离乘积得到的力矩（或扭矩），原则上任何物理量和距离相乘都会产生力矩，质量，电荷分布等。
 <br>单个点的力矩：
-<center>$$ \mu_n=r^n Q$$ </center>
+<center>$ \mu_n=r^n Q$ </center>
 <br>多个点则是积分得空间密度
-<center>$ \mu_n=\int r^n \rho(r) \mathrm{d}r$$</center>
+<center>$ \mu_n=\int r^n \rho(r) \mathrm{d}r $</center>
 <br>**如果点表示质量**，则第零矩是总质量，一阶矩除以总质量是质量，二阶矩是
 转动惯量
-<center>$$ I=r^2 m $$
-	$$ \sum_i r_i^2 m_i$$
+<center>$ I=r^2 m $
+	$ \sum_i r_i^2 m_i$
 </center>
 <br>还有一个多极矩的概念，设计到极坐标系和球面坐标，就不多说了[link](https://en.wikipedia.org/wiki/Moment_(physics))
 
@@ -33,32 +33,53 @@ description: 图像相关数学知识
 &emsp;&emsp;矩是物体形状识别的重要参数指标。总的来说，在数学中，矩的概念用来度量一组具有一定形态特点的点阵。如一个“二阶矩”在一维上可测量其“宽度”，在更高阶的维度上由于其使用于橢球的空间分布，我们还可以对点的云结构进行测量和描述。其他矩用来描述诸如与均值的偏差分布情况（偏态），或峰值的分布情况（峰态） 
 
 定义在实数域的实函数相对于值c的n阶矩为： 
-<center>$$ \mu '_n=\int_{-\infty}^{\infty}  (x-c)^n \,f(x)\,dx $$
+<center>$ \mu '_n=\int_{-\infty}^{\infty}  (x-c)^n \,f(x)\,dx $
 </center>
-<br>**如果点表示概率密度**，则第零阶矩表示总概率（即1），1，2,3,4阶矩依次为以下四项。数学中的概念与物理学中矩的概念密切相关。
+<br>**如果点表示概率密度**，则第零阶矩表示总概率（即1）,1,2,3阶矩依次为以下四项。数学中的概念与物理学中矩的概念密切相关。
 
 - 期望
 	<br>随机变量的期望定义为其一阶**原点**矩：
-	<center>$$E(x)=\int_{-\infty}^{\infty} x\,f(x)\,dx $$</center>
+	<center>$E(x)=\int_{-\infty}^{\infty} x\,f(x)\,dx $</center>
 	在方差等定义中，期望也成为随机变量的“中心”。
 	<br>显然，任何随机变量的i一阶中心据为0。
-<br>对于以下二阶及更高阶的矩，通常使用中心矩（围绕平均值c的矩，均值是一阶矩），而不是原点矩，因为中心矩能更清楚的体现关于分布形状的信息。
+<br>**对于以下二阶及更高阶的矩，通常使用中心矩（围绕平均值c的矩，均值是一阶矩），而不是原点矩，因为中心矩能更清楚的体现关于分布形状的信息。**
 - 方差
 	<br>随机变量的方差定义为其二阶中心矩： 
-	<center>$$ Var(x)=\int_{-\infty}^{\infty} [x-E(x)]^2 \,f(x)\,dx $$</center>
+	<center>$ Var(x)=\int_{-\infty}^{\infty} [x-E(x)]^2 \,f(x)\,dx $</center>
+> 归一化矩
+	<br>归一化n阶中心矩或者说标准矩，是n阶中心矩除以标准差 $\sigma^n $,归一化n阶中心矩为
+	<center>$x=\frac{E[(x-\mu)^n]}{\sigma^n} $ </center>
+	<br>这些归一化矩是无量纲值，表示独立于任何尺度的线性变化的分布。举个栗子，对于电信号，一阶矩是其DC(直流)电平，二阶矩与平均功率成比例。
+
 - 偏态
-	<br>随机变量的偏态定义为其三阶中心矩:
-	<center>$$ S(x)=\int _{-\infty }^{\infty }[x-E(x)]^{3}\,f(x)\,dx$$</center>
-- 峰态
-	<br>随机变量的峰态定义为其四阶中心矩：
-	<center>$$ K(x)=\int _{-\infty }^{\infty }[x-E(x)]^{4}\,f(x)\,dx$$</center>
+	<br>随机变量的偏态（衡量分布不对称性）定义为其三阶中心矩:
+	<center>$ S(x)=\int _{-\infty }^{\infty }[x-E(x)]^{3}\,f(x)\,dx$</center>
+	<br>需要注意，**任何对称分布偏态为0**，归一化三阶矩被成为偏斜度，向左偏斜（分布尾部在左侧较长）具有负偏度（失效率数据常向左偏斜，如极少量的灯泡会立即烧坏），向右偏斜分布（分布尾部在右侧较长）具有正偏度（工资数据往往以这种方式偏斜，大多数人所得工资较少）。
+	<center>![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Negative_and_positive_skew_diagrams_%28English%29.svg/400px-Negative_and_positive_skew_diagrams_%28English%29.svg.png)</center>
+
+
+- 峰度
+	<br>随机变量的峰度定义为其四阶中心矩与方差平方的比值：
+	<center>$ K(x)=\frac{\int _{-\infty }^{\infty }[x-E(x)]^{4}\,f(x)\,dx}{\sigma^4}$</center>
+	<br>峰度表示分布的波峰和尾部与正态分布的区别，峰度有助于初步了解数据分布的一般特征。
+	- 完全符合正态分布的数据峰度值为0,及基线。如果样本峰度显著偏离0，就可判断此数据不是正态分布。
+	![正峰度](http://support.minitab.com/zh-cn/minitab/17/distribution_plot_positive_kurtosis.png)
+	![负峰度](http://support.minitab.com/zh-cn/minitab/17/distribution_plot_negative_kurtosis.png) 
+- 
+
+
 - 样本矩
 	<br>矩常常通过样本矩来估计，这种方法不需要先估计其概率分布。
-	<center>$$\mu '_{n}\approx {\frac {1}{N}}\sum _{i=1}^{N}X_{i}^{n}$$</center>
+	<center>$\mu '_{n}\approx {\frac {1}{N}}\sum _{i=1}^{N}X_{i}^{n}$</center>
 ### 图像意义
 
 ### 点云意义
 
 
-参考[zh.wiki_矩（数学）](https://zh.wikipedia.org/wiki/%E7%9F%A9_(%E6%95%B8%E5%AD%B8)) / [wiki_moments(math)](https://en.wikipedia.org/wiki/Moment_(mathematics)) / [wiki_moments(physics)](https://en.wikipedia.org/wiki/Moment_(physics))
+参考：
+1.[zh.wiki_矩（数学）](https://zh.wikipedia.org/wiki/%E7%9F%A9_(%E6%95%B8%E5%AD%B8)) 
+2.[wiki_moments(math)](https://en.wikipedia.org/wiki/Moment_(mathematics)) 
+3.[wiki_moments(physics)](https://en.wikipedia.org/wiki/Moment_(physics))
+4.[偏度和峰度如何影响您的分布](http://support.minitab.com/zh-cn/minitab/17/topic-library/basic-statistics-and-graphs/summary-statistics/how-skewness-and-kurtosis-affect-your-distribution/)
 
+（）
