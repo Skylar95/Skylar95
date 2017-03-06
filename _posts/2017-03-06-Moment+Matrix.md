@@ -104,8 +104,9 @@ description: 图像相关数学知识
 > 在实践中，图像被概括为具有几个较低阶矩的函数。
 
 > 举个栗子，Opencv中moment函数从原点矩中获得的简单图像属性
-	-	面积（二值图）或灰度和（灰度图）：M00
-	-	质心：${x,y}={M10/M00,M01/M00}$ 
+-	面积（二值图）或灰度和（灰度图）：M00
+-	质心：${\bar{x},\bar{y}={\frac{M10}{M00},\frac{M01}{M00}$ 
+>
 ```
  	vector<Moments> mu(contours.size() );
 	vector<Point2f> mc(contours.size() );
@@ -117,8 +118,38 @@ description: 图像相关数学知识
 
 - 中心矩
 	<br>中心矩被定义为：
-	<center>$\mu_{pq}=\int\limits_{-\infty}^{infty} \int\limits_{-\infty}^{infty} (x-\bar{x})^p (y-\bar{y})^q \,f(x,y) \,dx\,dy \quad \bar{x}=\frac{M_{10}}{M_{00}} ,\bar{y}=\frac{M_{01}}{M_{00}} $ </center>
+	<center>$\mu_{pq}=\int\limits_{-\infty}^{\infty} \int\limits_{-\infty}^{\infty} (x-\bar{x})^p (y-\bar{y})^q \,f(x,y) \,dx\,dy \quad \bar{x}=\frac{M_{10}}{M_{00}} ,\bar{y}=\frac{M_{01}}{M_{00}} $ </center>
+	<br>如果是数字图像，则等式变为
+	<center>$\mu_{pq}=\sum\limits_x \sum\limits_y (x-\bar{x})^p (y-\bar{y})^q\,f(x,y)$ </center>
+	3阶及以下中心矩依次为：
+	<center>$
+	\mu_{00}=M_{00},\\ \mu_{01}=0,\\\mu_{10}=0,\\
+	\mu_{11}=M_{11}-\bar{x}M_{01}=M_{11}-\bar{y}M_{10},\\
+	\mu_{20}=M_{20}-\bar{x}M_{10},\\
+	\mu_{02}=M_{02}-\bar{y}M_{01},\\
+	\mu_{21}=M_{21}-2\bar{x}M_{11}-\bar{y}M_{20}+2\bar{x}^2M_{01},\\
+	\mu_{12}=M_{12}-2\bar{y}M_{11}-\bar{x}M_{02}+2\bar{y}^2M_{10},\\
+	\mu_{30}=M_{30}-3\bar{x}M_{20}+2\bar{x}^2M_{10},\\
+	\mu_{03}=M_{03}-3\bar{y}M_{02}+2\bar{y}^2M_{01},
+	$</center>
+	<br>总结出来就是
+	<center>$\mu_{pq}=\sum\limits_x \sum\limits_y  \left( \begin{array}{c} p\\m \end{array} \right) \left( \begin{array}{c} q\\n \end{array} \right) (-\bar{x})^{p-m} (-\bar{y})^{q-n} M_{mn} $</center>
+	<br>中心矩具有平移不变性
 
+> 举个栗子
+<br>图像方向的信息可以通过首先使用二阶中心矩来构造协方差矩阵导出
+<center>
+$ \mu'_{20}=\frac{\mu_{20}}{\mu_{00}}=\frac{M_{20}}{M_{00}}-\bar{x}^2 \\
+ \mu'_{02}=\frac{\mu_{02}}{\mu_{00}}=\frac{M_{02}}{M_{00}}-\bar{y}^2 \\
+ \mu'_{11}=\frac{\mu_{11}}{\mu_{00}}=\frac{M_{11}}{M_{00}}-\bar{x}\bar{y}
+$
+</center>
+<br>其中，图像上一点$I(x,y)$的协方差矩阵为
+<center>
+$
+	cov[I(x,y)]=
+$
+</center>
 
 - 矩不变性
 
