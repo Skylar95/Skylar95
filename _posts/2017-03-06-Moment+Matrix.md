@@ -63,9 +63,7 @@ description: 图像相关数学知识
 	<center>$$ K(x)=\frac{\int _{-\infty }^{\infty }[x-E(x)]^{4}\,f(x)\,dx}{\sigma^2}-3 $$</center>
 
 >   峰度表示分布的波峰和尾部与正态分布的区别，峰度有助于初步了解数据分布的一般特征。
-	<br>完全符合正态分布的数据峰度值为0,及基线。如果样本峰度显著偏离0，就可判断此数据不是正态分布。
-	![正峰度](http://support.minitab.com/zh-cn/minitab/17/distribution_plot_positive_kurtosis.png)
-	![负峰度](http://support.minitab.com/zh-cn/minitab/17/distribution_plot_negative_kurtosis.png) 
+	<br>完全符合正态分布的数据峰度值为0,及基线。如果样本峰度显著偏离0，就可判断此数据不是正态分布。 
 
 - 混合矩
 	<br>混合矩是多个变量的矩，比如协方差，协偏度，协峰度。虽然协方差只有一个，但协偏度和协峰度存在多个。
