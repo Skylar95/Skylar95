@@ -76,7 +76,9 @@ description: 图像相关数学知识
 	<br>所以：<br>
 	<center>$E[(x-b)^n]= \sum\limits_{i=0}^n \left( \begin{array}{c} c\\r \end{array} \right) E[(x-a)^i] (a-b)^{n-i} $</center>
 
-	<br>
+- 累加性
+	<br>当x和y是独立变量时，<br>
+	<center>$m_1(x+y)=m_1(x)+m_1(y) \\ Var(x+y)=Var(x)+Var(y)\\\mu_3(x+y)=\mu_3(x)+\mu_3(y) $ </center>
 
 - 样本矩
 	<br>矩常常通过样本矩来估计，这种方法不需要先估计其概率分布。
