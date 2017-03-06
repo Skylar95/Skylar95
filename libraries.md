@@ -23,8 +23,3 @@ header-img: "img/3.jpg"
 - [Github](https://github.com/)
 
 
-
-
-
-
-
