@@ -180,29 +180,28 @@ $\sqrt{1-\frac{\lambda_2}{\lambda_1}}$
   	<br>注意平移不变量仅仅在中心矩时直接跟随使用。
   - 旋转不变性
   As shown in the work of Hu et al.,[1][2] invariants with respect to translation, scale, and rotation can be constructed:
+<center>
 $
 I1=η20+η02 {\displaystyle I_{1}=\eta _{20}+\eta _{02}}I_{1}=\eta _{{20}}+\eta _{{02}} \\
-
 I2=(η20−η02)2+4η211 {\displaystyle I_{2}=(\eta _{20}-\eta _{02})^{2}+4\eta _{11}^{2}}I_{2}=(\eta _{{20}}-\eta _{{02}})^{2}+4\eta _{{11}}^{2}\\
-
 I3=(η30−3η12)2+(3η21−η03)2 {\displaystyle I_{3}=(\eta _{30}-3\eta _{12})^{2}+(3\eta _{21}-\eta _{03})^{2}}I_{3}=(\eta _{{30}}-3\eta _{{12}})^{2}+(3\eta _{{21}}-\eta _{{03}})^{2}\\
-
 I4=(η30+η12)2+(η21+η03)2 {\displaystyle I_{4}=(\eta _{30}+\eta _{12})^{2}+(\eta _{21}+\eta _{03})^{2}}I_{4}=(\eta _{{30}}+\eta _{{12}})^{2}+(\eta _{{21}}+\eta _{{03}})^{2}\\
-
 I5=(η30−3η12)(η30+η12)[(η30+η12)2−3(η21+η03)2]+(3η21−η03)(η21+η03)[3(η30+η12)2−(η21+η03)2] {\displaystyle I_{5}=(\eta _{30}-3\eta _{12})(\eta _{30}+\eta _{12})[(\eta _{30}+\eta _{12})^{2}-3(\eta _{21}+\eta _{03})^{2}]+(3\eta _{21}-\eta _{03})(\eta _{21}+\eta _{03})[3(\eta _{30}+\eta _{12})^{2}-(\eta _{21}+\eta _{03})^{2}]}I_{5}=(\eta _{{30}}-3\eta _{{12}})(\eta _{{30}}+\eta _{{12}})[(\eta _{{30}}+\eta _{{12}})^{2}-3(\eta _{{21}}+\eta _{{03}})^{2}]+(3\eta _{{21}}-\eta _{{03}})(\eta _{{21}}+\eta _{{03}})[3(\eta _{{30}}+\eta _{{12}})^{2}-(\eta _{{21}}+\eta _{{03}})^{2}]\\
-
 I6=(η20−η02)[(η30+η12)2−(η21+η03)2]+4η11(η30+η12)(η21+η03) {\displaystyle I_{6}=(\eta _{20}-\eta _{02})[(\eta _{30}+\eta _{12})^{2}-(\eta _{21}+\eta _{03})^{2}]+4\eta _{11}(\eta _{30}+\eta _{12})(\eta _{21}+\eta _{03})}I_{6}=(\eta _{{20}}-\eta _{{02}})[(\eta _{{30}}+\eta _{{12}})^{2}-(\eta _{{21}}+\eta _{{03}})^{2}]+4\eta _{{11}}(\eta _{{30}}+\eta _{{12}})(\eta _{{21}}+\eta _{{03}})\\
-
 I7=(3η21−η03)(η30+η12)[(η30+η12)2−3(η21+η03)2]−(η30−3η12)(η21+η03)[3(η30+η12)2−(η21+η03)2]. {\displaystyle I_{7}=(3\eta _{21}-\eta _{03})(\eta _{30}+\eta _{12})[(\eta _{30}+\eta _{12})^{2}-3(\eta _{21}+\eta _{03})^{2}]-(\eta _{30}-3\eta _{12})(\eta _{21}+\eta _{03})[3(\eta _{30}+\eta _{12})^{2}-(\eta _{21}+\eta _{03})^{2}].}I_{7}=(3\eta _{{21}}-\eta _{{03}})(\eta _{{30}}+\eta _{{12}})[(\eta _{{30}}+\eta _{{12}})^{2}-3(\eta _{{21}}+\eta _{{03}})^{2}]-(\eta _{{30}}-3\eta _{{12}})(\eta _{{21}}+\eta _{{03}})[3(\eta _{{30}}+\eta _{{12}})^{2}-(\eta _{{21}}+\eta _{{03}})^{2}].
 $
+</center>
+
 These are well-known as Hu moment invariants.
 
 The first one, I1, is analogous to the moment of inertia around the image's centroid, where the pixels' intensities are analogous to physical density. The last one, I7, is skew invariant, which enables it to distinguish mirror images of otherwise identical images.
 
 A general theory on deriving complete and independent sets of rotation moment invariants was proposed by J. Flusser.[3] He showed that the traditional set of Hu moment invariants is not independent nor complete. I3 is not very useful as it is dependent on the others. In the original Hu's set there is a missing third order independent moment invariant:
+<center>
 $
 I8=η11[(η30+η12)2−(η03+η21)2]−(η20−η02)(η30+η12)(η03+η21) {\displaystyle I_{8}=\eta _{11}[(\eta _{30}+\eta _{12})^{2}-(\eta _{03}+\eta _{21})^{2}]-(\eta _{20}-\eta _{02})(\eta _{30}+\eta _{12})(\eta _{03}+\eta _{21})}I_{8}=\eta _{{11}}[(\eta _{{30}}+\eta _{{12}})^{2}-(\eta _{{03}}+\eta _{{21}})^{2}]-(\eta _{{20}}-\eta _{{02}})(\eta _{{30}}+\eta _{{12}})(\eta _{{03}}+\eta _{{21}})
 $
+</center>
 Later, J. Flusser and T. Suk[4] specialized the theory for N-rotationally symmetric shapes case.
 
 
