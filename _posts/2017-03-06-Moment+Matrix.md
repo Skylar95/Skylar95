@@ -10,7 +10,7 @@ description: 图像相关数学知识
 * content
 {:toc}
 
-# 矩意义的理解及与矩阵的区别
+# 矩的理解
 
 &emsp;&emsp;之前在写一个小正方体的位姿估计程序，把矩的概念了解了一下，刚好随机过程老师又提到了，就当成课外作业彻底弄懂。
 
@@ -117,7 +117,7 @@ description: 图像相关数学知识
 
 - 中心矩
 	<br>中心矩被定义为：
-	<center>$\mu_{pq}=\int\limits_{-\infty}^{infty} \int\limits_{-\infty}^{infty} (x-\bar{x})^p (y-\bar{y})^q \,f(x,y) \,dx\,dy \quad \bar{x}=\frac{M_{10}}{M_{00}} $ </center>
+	<center>$\mu_{pq}=\int\limits_{-\infty}^{infty} \int\limits_{-\infty}^{infty} (x-\bar{x})^p (y-\bar{y})^q \,f(x,y) \,dx\,dy \quad \bar{x}=\frac{M_{10}}{M_{00}} ,\bar{y}=\frac{M_{01}}{M_{00}} $ </center>
 
 
 - 矩不变性
