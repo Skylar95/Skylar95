@@ -94,8 +94,9 @@ description: 图像相关数学知识
 
 参考：
 
--- [zh.wiki_矩（数学）](https://zh.wikipedia.org/wiki/%E7%9F%A9_(%E6%95%B8%E5%AD%B8)) 
--- [wiki_moments(math)](https://en.wikipedia.org/wiki/Moment_(mathematics)) 
--- [wiki_moments(physics)](https://en.wikipedia.org/wiki/Moment_(physics))
--- [偏度和峰度如何影响您的分布](http://support.minitab.com/zh-cn/minitab/17/topic-library/basic-statistics-and-graphs/summary-statistics/how-skewness-and-kurtosis-affect-your-distribution/)
+1. [zh.wiki/矩（数学）](https://zh.wikipedia.org/wiki/%E7%9F%A9_(%E6%95%B8%E5%AD%B8)) 
+2. [wiki/moments(math)](https://en.wikipedia.org/wiki/Moment_(mathematics)) 
+3. [wiki/moments(physics)](https://en.wikipedia.org/wiki/Moment_(physics))
+4. [偏度和峰度如何影响您的分布](http://support.minitab.com/zh-cn/minitab/17/topic-library/basic-statistics-and-graphs/summary-statistics/how-skewness-and-kurtosis-affect-your-distribution/)
+5. [wiki/Image_moment](https://en.wikipedia.org/wiki/Image_moment)
 
