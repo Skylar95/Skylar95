@@ -19,14 +19,14 @@ description: 图像相关数学知识
 ### 物理意义
 &emsp;&emsp;数学中矩的概念来自物理学。在物理学中，矩是表示距离和物理量乘积的物理量，受物理量的空间分布或安排影响。由其定义，矩通常需要一个参考点（基点或参考系）来定义距离。如力和参考点距离乘积得到的力矩（或扭矩），原则上任何物理量和距离相乘都会产生力矩，质量，电荷分布等。
 <br>单个点的力矩：
-<center>$$ \mu_n=r^n Q$$ <center\>
+<center>$$ \mu_n=r^n Q$$ </center>
 <br>多个点则是积分得空间密度
-<center>$ \mu_n=\int r^n \rho(r) \mathrm{d}r$$<center\>
+<center>$ \mu_n=\int r^n \rho(r) \mathrm{d}r$$</center>
 <br>力矩是一阶矩
 <br>转动惯量
 <center>$$ I=r^2 m $$
 	$$ \sum_i r_i^2 m_i$$
-<center\>
+</center>
 <br>是二阶矩 
 <br>还有一个多极矩的概念，设计到极坐标系和球面坐标，就不多说了[link](https://en.wikipedia.org/wiki/Moment_(physics))
 
@@ -35,19 +35,19 @@ description: 图像相关数学知识
 
 定义在实数域的实函数相对于值c的n阶矩为： 
 <center>$$ \mu '_n=\int_{-\infty}^{\infty}  (x-c)^n \,f(x)\,dx $$
-<center\>
+</center>
 <br>若f(x)是概率密度函数，则可看出其相对于值0的一阶矩是连续随机变量的数学期望
 
 - 期望
 	随机变量的期望定义为其一阶**原点**矩：
-	<center>$$E(x)=\int_{-\infty}^{\infty} x\,f(x)\,dx $$<center\>
+	<center>$$E(x)=\int_{-\infty}^{\infty} x\,f(x)\,dx $$</center>
 	在方差等定义中，期望也成为随机变量的“中心”。
 	<br>显然，任何随机变量的i一阶中心据为0。
 - 方差
 	随机变量的方差定义为其二阶中心矩：<br>
-	<center>$$ Var(x)=\int_{-\infty}^{\infty} [x-E(x)]^2 \,f(x)\,dx $$<center\>
-
+	<center>$$ Var(x)=\int_{-\infty}^{\infty} [x-E(x)]^2 \,f(x)\,dx $$</center>
 - 偏态
+	随机变量的偏态定义为其三阶中心矩
 - 峰态
 - 样本矩
 
