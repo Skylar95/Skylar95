@@ -55,12 +55,12 @@ description: 图像相关数学知识
 	<br>随机变量的偏态（衡量分布不对称性）定义为其三阶中心矩:
 	<center>$ S(x)=\int _{-\infty }^{\infty }[x-E(x)]^{3}\,f(x)\,dx$</center>
 	<br>需要注意，**任何对称分布偏态为0**，归一化三阶矩被成为偏斜度，向左偏斜（分布尾部在左侧较长）具有负偏度（失效率数据常向左偏斜，如极少量的灯泡会立即烧坏），向右偏斜分布（分布尾部在右侧较长）具有正偏度（工资数据往往以这种方式偏斜，大多数人所得工资较少）。
-	<center>![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Negative_and_positive_skew_diagrams_%28English%29.svg/400px-Negative_and_positive_skew_diagrams_%28English%29.svg.png)</center>
+	<center>![偏态](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Negative_and_positive_skew_diagrams_%28English%29.svg/400px-Negative_and_positive_skew_diagrams_%28English%29.svg.png)</center>
 
 
 - 峰度
-	<br>随机变量的峰度定义为其四阶中心矩与方差平方的比值：
-	<center>$ K(x)=\frac{\int _{-\infty }^{\infty }[x-E(x)]^{4}\,f(x)\,dx}{\sigma^4}$</center>
+	<br>一般随机变量的峰度定义为其四阶中心矩与方差平方的比值在减3，减3是为了让正态分布峰度为0，这也被称为超值峰度：
+	<center>$ K(x)=\frac{\int _{-\infty }^{\infty }[x-E(x)]^{4}\,f(x)\,dx}{\sigma^2}-3$</center>
 	<br>峰度表示分布的波峰和尾部与正态分布的区别，峰度有助于初步了解数据分布的一般特征。
 	- 完全符合正态分布的数据峰度值为0,及基线。如果样本峰度显著偏离0，就可判断此数据不是正态分布。
 	![正峰度](http://support.minitab.com/zh-cn/minitab/17/distribution_plot_positive_kurtosis.png)
