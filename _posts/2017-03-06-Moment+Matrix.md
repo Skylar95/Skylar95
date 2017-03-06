@@ -199,7 +199,7 @@ The first one, I1, is analogous to the moment of inertia around the image's cent
 A general theory on deriving complete and independent sets of rotation moment invariants was proposed by J. Flusser.[3] He showed that the traditional set of Hu moment invariants is not independent nor complete. I3 is not very useful as it is dependent on the others. In the original Hu's set there is a missing third order independent moment invariant:
 <center>
 $
-I8=η11[(η30+η12)2−(η03+η21)2]−(η20−η02)(η30+η12)(η03+η21) {\displaystyle I_{8}=\eta _{11}[(\eta _{30}+\eta _{12})^{2}-(\eta _{03}+\eta _{21})^{2}]-(\eta _{20}-\eta _{02})(\eta _{30}+\eta _{12})(\eta _{03}+\eta _{21})}I_{8}=\eta _{{11}}[(\eta _{{30}}+\eta _{{12}})^{2}-(\eta _{{03}}+\eta _{{21}})^{2}]-(\eta _{{20}}-\eta _{{02}})(\eta _{{30}}+\eta _{{12}})(\eta _{{03}}+\eta _{{21}})
+I8=η11[(η30+η12)2−(η03+η21)2]−(η20−η02)(η30+η12)(η03+η21) {I_8=\eta_{11}[(\eta _{30}+\eta_{12})^2-(\eta_{03}+\eta_{21})^2]-(\eta_{20}-\eta _{02})(\eta _{30}+\eta _{12})(\eta _{03}+\eta _{21})}I_8=\eta _{11}[(\eta _{30}+\eta _{12})^2-(\eta _{03}+\eta _{21})^2]-(\eta _{20}-\eta _{02})(\eta _{30}+\eta _{12})(\eta _{03}+\eta _{21})
 $
 </center>
 Later, J. Flusser and T. Suk[4] specialized the theory for N-rotationally symmetric shapes case.
