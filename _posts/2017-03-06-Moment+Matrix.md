@@ -159,9 +159,12 @@ $
 $</center>
 <br>协方差矩阵的特征值可以表示为：
 <center>$
-	\lambda_i = \frac{\mu'_{20}+\mu'_{02}}{2}  \pm  \frac{\sqrt{4\mu'_{11}^2+(\mu'_{20}+\mu'_{02})^2}}{2}
+\lambda _{i}={\frac  {\mu '_{{20}}+\mu '_{{02}}}{2}}\pm {\frac  {{\sqrt  {4{\mu '}_{{11}}^{2}+({\mu '}_{{20}}-{\mu '}_{{02}})^{2}}}}{2}},
 $</center>
-
+<br>且特征值与特征向量轴的长度的平方成比例。特征值的幅度的相对差异体现了图像的i偏心特性或者说他多细长。偏心率是：
+<center>
+$\sqrt{1-\frac{\lambda_2}{\lambda_1}}$
+</center>
 
 - 矩不变性
 
@@ -172,8 +175,7 @@ $</center>
 	- 旋转不变性
 
 ### 点云意义
-
-
+ 
 参考：
 
 1. [zh.wiki/矩（数学）](https://zh.wikipedia.org/wiki/%E7%9F%A9_(%E6%95%B8%E5%AD%B8)) 
