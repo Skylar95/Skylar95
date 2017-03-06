@@ -155,11 +155,11 @@ $
 </center>
 <br>矩阵的特征向量对英语图像强度的长轴和短轴，因此可以从与最大特征值相关联的特征向量的角度朝向最靠近该特征向量的轴提取取向。可以证明，该角度$\theta$可由以下公式得出：
 <center>$
-	\Theta=\frac{1}{2}arctan\bigg( \frac{2\mu'_{11}}{\mu'_{20}-mu'_{02}} \bigg) \quad \mu'_{20}-mu'_{02} \neq 0
+	\Theta=\frac{1}{2}arctan\bigg( \frac{2\mu'_{11}}{\mu'_{20}-mu'_{02}} \bigg) \quad \mu'_{20}- \mu'_{02} \neq 0
 $</center>
 <br>协方差矩阵的特征值可以表示为：
 <center>$
-	\lambda_i=\frac{\mu'_{20}+mu'_{02}}{2} \pm  \frac{\sqrt{4mu'_{11}^2}+(\mu'_{20}+mu'_{02})^2}}{2}
+	\lambda_i = \frac{\mu'_{20}+\mu'_{02}}{2}  \pm  \frac{\sqrt{4mu'_{11}^2+(\mu'_{20}+\mu'_{02})^2}}{2}
 $</center>
 
 
