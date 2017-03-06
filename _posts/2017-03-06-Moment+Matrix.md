@@ -207,7 +207,14 @@ Later, J. Flusser and T. Suk[4] specialized the theory for N-rotationally symmet
 
 ### 点云意义
 
+[1](http://pointclouds.org/documentation/tutorials/moment_of_inertia.php)
+[2](http://www.ce.memphis.edu/2131/PDFsF12/Moments%20in%203D.pdf)
+[3](http://pointclouds.org/documentation/tutorials/moment_of_inertia.php)
+[4](http://web.mst.edu/~ide50-3/printable_notes/4_Mom%203D_examples.pdf)
+[5](http://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/SHUTLER3/CVonline_moments.html)
 
+
+。。。未完待续。。。。。先睡觉了。。。。。。
 参考：
 
 1. [zh.wiki/矩（数学）](https://zh.wikipedia.org/wiki/%E7%9F%A9_(%E6%95%B8%E5%AD%B8)) 
