@@ -65,8 +65,6 @@ description: 图像相关数学知识
 	- 完全符合正态分布的数据峰度值为0,及基线。如果样本峰度显著偏离0，就可判断此数据不是正态分布。
 	![正峰度](http://support.minitab.com/zh-cn/minitab/17/distribution_plot_positive_kurtosis.png)
 	![负峰度](http://support.minitab.com/zh-cn/minitab/17/distribution_plot_negative_kurtosis.png) 
-- 
-
 
 - 样本矩
 	<br>矩常常通过样本矩来估计，这种方法不需要先估计其概率分布。
@@ -77,9 +75,10 @@ description: 图像相关数学知识
 
 
 参考：
-1.[zh.wiki_矩（数学）](https://zh.wikipedia.org/wiki/%E7%9F%A9_(%E6%95%B8%E5%AD%B8)) 
-2.[wiki_moments(math)](https://en.wikipedia.org/wiki/Moment_(mathematics)) 
-3.[wiki_moments(physics)](https://en.wikipedia.org/wiki/Moment_(physics))
-4.[偏度和峰度如何影响您的分布](http://support.minitab.com/zh-cn/minitab/17/topic-library/basic-statistics-and-graphs/summary-statistics/how-skewness-and-kurtosis-affect-your-distribution/)
+
+-- [zh.wiki_矩（数学）](https://zh.wikipedia.org/wiki/%E7%9F%A9_(%E6%95%B8%E5%AD%B8)) 
+-- [wiki_moments(math)](https://en.wikipedia.org/wiki/Moment_(mathematics)) 
+-- [wiki_moments(physics)](https://en.wikipedia.org/wiki/Moment_(physics))
+-- [偏度和峰度如何影响您的分布](http://support.minitab.com/zh-cn/minitab/17/topic-library/basic-statistics-and-graphs/summary-statistics/how-skewness-and-kurtosis-affect-your-distribution/)
 
 （）
