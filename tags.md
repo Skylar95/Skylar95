@@ -7,11 +7,7 @@ header-img: "img/2.jpg"
 
 ## Guides | 本页使用方法
 
-1. Choose a interesting word  在下面选一个你喜欢的词
-2. Click it  点击它
-3. Jump to it 相关的文章会「唰」地一声跳到页面顶端
-4. Try it ?  马上试试？
-
+**点击关键词，自动跳转**
 ## My Index
 
 
