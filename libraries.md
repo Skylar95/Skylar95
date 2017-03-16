@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Libraries"
-description: "Robot Vision Libraries "
+title: "Study"
+description: "My Study on DeepLearning "
 header-img: "img/3.jpg"
 ---
 
@@ -11,14 +11,10 @@ header-img: "img/3.jpg"
 </center>
 
 
-### 我的贝壳：
+### 我所偏爱：
 
 
 - [OpenCV](http://opencv.org/)
-
-- [PCL](https://pointclouds.org/)
-
-- [OpenNI](http://openni.ru/)
 
 - [Github](https://github.com/)
 
