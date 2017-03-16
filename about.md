@@ -17,6 +17,7 @@ header-img: "img/5.jpg"
 ### 项目经历M
 - 曾担任西北工业大学足球机器人基地实物NAO组队长，负责Bhuman平台底层及策略，Naoqi平台视觉（OpenCV）
 - 曾在Caffe框架下，独立实现PairLossLayers，并借此约束网络来提高精度。现投稿SCI一篇
+
 ### 个人爱好
 - 编程
 - 滑板
