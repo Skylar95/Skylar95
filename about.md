@@ -16,7 +16,7 @@ header-img: "img/5.jpg"
 
 ### 联系我
  
-- Blog: [reasonw.github.io](http://reasonw.github.io/)    
+- Blog: [reasonw.github.io](http://limbo0000.github.io/limbo/)    
 - Gmail: [limbo0000@gmail.com](mailto:limbo0000@gmail.com )  
 - Github: [https://github.com/limbo0000/](https://github.com/limbo0000/)
 
