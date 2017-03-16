@@ -4,11 +4,11 @@ header-img: "img/1.jpg"
 tagline: "cn"  
 description: "Limbo_Yang| I am who I am"  
 baseurl: ""
-url: "http://limbo0000.github.io/limboYang.github.io"  
+url: "http://limbo0000.github.io/limbo"  
  # About/contact
 owner: 
   name: "Limbo "
-  email: limbo0000@gmail.com
+  email: "limbo0000@gmail.com"
   bio: "Welcome bro"
 
 # Data
