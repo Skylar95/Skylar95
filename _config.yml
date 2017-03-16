@@ -1,25 +1,25 @@
 # Site settings
-title: 求仁得仁
+title: 右手改变世界
 header-img: "img/1.jpg"
 tagline: "cn"  
-description: "reason_W成龙| For Reason,For Real"  
+description: "Limbo_Yang| I am who I am"  
 baseurl: ""
-url: "http://reasonW.github.io"  
+url: "http://limbo0000.github.io/limboYang.github.io"  
  # About/contact
 owner: 
-  name: "reasonW "
-  email: charlewander@gmail.com
-  bio: "有朋自远方来，不亦说乎"
+  name: "Limbo "
+  email: limbo0000@gmail.com
+  bio: "Welcome bro"
 
 # Data
 gavatar: http://dreamofbook.qiniudn.com/Az..png
 favicon: img/favicon.png
 
 douban_username:  
-github_username: reasonW
+github_username: limbo0000
 facebook_username: 
-zhihu_username: reason_W
-email: charlewander@gmail.com
+zhihu_username: Limbo
+email: limbo0000@gmail.com
 jianshu_username: 047512188d81  
 
 # Build settings  
@@ -43,14 +43,14 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "reason_W成龙"
+      author: "Limbo_Yang|"
       header-img: "img/6.jpg" # We don't want posts without a header image, that whould mean white on white
 
 # Comments 
 comments :
   provider : duoshuo
   duoshuo :
-    short_name : reason_W成龙
+    short_name : Limbo_Yang|
   disqus :
       short_name : 
   duoshuo_share: true
