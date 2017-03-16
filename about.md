@@ -28,7 +28,9 @@ header-img: "img/5.jpg"
  
 - Blog: [limbo0000.github.io](http://limbo0000.github.io/limbo/)    
 - Gmail: [limbo0000@gmail.com](mailto:limbo0000@gmail.com )  
+- Email: [limbo0066@163.com](mailto:limbo0066@163.com)
 - Github: [github.com/limbo0000/](https://github.com/limbo0000/)
+- Wechat: [limbo0066]
 
  
 <center>
