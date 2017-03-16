@@ -8,7 +8,7 @@ header-img: "img/5.jpg"
 
 
 <center>
-    <p><img src="https://github.com/limbo0000/limbo/blob/master/img/ycy.jpg?raw=true" align="center" width="200" height="400"></p>
+    <p><img src="https://github.com/limbo0000/limbo/blob/master/img/ycy.jpg?raw=true" align="center" width="300" height="400"></p>
 </center>
 
 <center>
