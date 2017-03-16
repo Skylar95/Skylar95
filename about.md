@@ -6,7 +6,7 @@ header-img: "img/5.jpg"
 ---
 ### 我是杨策元
 <center>
-目前是西北工业大学一名本科生.
+目前是西北工业大学一名本科生./n
 致力于深度学习方向，希望在该领域做出一点微小的贡献。
 </center>
 
@@ -14,7 +14,7 @@ header-img: "img/5.jpg"
     <p><img src="https://github.com/limbo0000/limbo/blob/master/img/myself.jpg?raw=true" align="center" width="200" height="200"></p>
 </Left>
 
-### 项目经历M
+### 项目经历
 - 曾担任西北工业大学足球机器人基地实物NAO组队长，负责Bhuman平台底层及策略，Naoqi平台视觉（OpenCV）
 - 曾在Caffe框架下，独立实现PairLossLayers，并借此约束网络来提高精度。现投稿SCI一篇
 
@@ -30,7 +30,7 @@ header-img: "img/5.jpg"
 - Gmail: [limbo0000@gmail.com](mailto:limbo0000@gmail.com )  
 - Email: [limbo0066@163.com](mailto:limbo0066@163.com)
 - Github: [github.com/limbo0000](https://github.com/limbo0000/)
-- Wechat: [limbo0066]
+- Wechat: limbo0066
 
  
 <center>
