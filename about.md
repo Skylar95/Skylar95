@@ -1,11 +1,11 @@
 ---
 layout: page
 title: "About Me"
-description: "读万卷书，行万里路"
+description: "认真生活"
 header-img: "img/5.jpg"
 ---
 <center>
-我是reasonW成龙，西北工业大学本科生，正在为成为一名优秀的CV科学家而奋斗。
+我是杨策元，目前是西北工业大学一名本科生，致力于深度学习方向，希望在该领域做出一点微小的贡献。
 </center>
 
 <center>
@@ -17,8 +17,8 @@ header-img: "img/5.jpg"
 ### 联系我
  
 - Blog: [reasonw.github.io](http://reasonw.github.io/)    
-- Gmail: [charlewander@gmail.com](mailto:charlewander@gmail.com )  
-- Github: [https://github.com/reasonW/](https://github.com/reasonW/)
+- Gmail: [limbo0000@gmail.com](mailto:limbo0000@gmail.com )  
+- Github: [https://github.com/limbo0000/](https://github.com/limbo0000/)
 
  
 <center>
