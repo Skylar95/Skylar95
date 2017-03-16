@@ -10,9 +10,9 @@ header-img: "img/5.jpg"
 致力于深度学习方向，希望在该领域做出一点微小的贡献。
 </center>
 
-<center>
+<Left>
     <p><img src="https://github.com/limbo0000/limbo/blob/master/img/myself.jpg?raw=true" align="center" width="200" height="200"></p>
-</center>
+</Left>
 
 ### 项目经历M
 - 曾担任西北工业大学足球机器人基地实物NAO组队长，负责Bhuman平台底层及策略，Naoqi平台视觉（OpenCV）
@@ -23,6 +23,7 @@ header-img: "img/5.jpg"
 - 滑板
 - 摄影
 - 旅行（不久将开通Travel专栏）
+
 ### 联系我
  
 - Blog: [limbo0000.github.io](http://limbo0000.github.io/limbo/)    
