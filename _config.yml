@@ -59,8 +59,8 @@ comments :
 # Analytics and webmaster tools stuff goes here
 
 # Google Analytics
-ga_track_id: 'UA-91795857-1'            # Format: UA-xxxxxx-xx
-ga_domain:    
+#ga_track_id: 'UA-91795857-1'            # Format: UA-xxxxxx-xx
+#ga_domain:    
 
  # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
