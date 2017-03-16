@@ -6,8 +6,9 @@ header-img: "img/5.jpg"
 ---
 ### 我是杨策元
 <center>
-目前是西北工业大学一名本科生./n
-致力于深度学习方向，希望在该领域做出一点微小的贡献。
+目前是西北工业大学一名本科生。
+<br/>致力于深度学习方向，希望在该领域做出一点微小的贡献。
+
 </center>
 
 <Left>
@@ -34,7 +35,7 @@ header-img: "img/5.jpg"
 
  
 <center>
-    <p><img src="https://github.com/limbo0000/limbo/blob/master/img/erweima.jpg" align="center"></p>
+    <p><img src="https://github.com/limbo0000/limbo/blob/master/img/erweima.png" align="center"></p>
 </center>
 
 
