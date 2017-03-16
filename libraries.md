@@ -6,9 +6,6 @@ header-img: "img/3.jpg"
 ---
 
 
-<center>
-    <p><img src="https://github.com/limbo0000/limbo/blob/master/img/favicon.ico" align="center"></p>
-</center>
 
 
 ### 我所偏爱：
