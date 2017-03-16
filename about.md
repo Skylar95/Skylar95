@@ -18,7 +18,7 @@ header-img: "img/5.jpg"
  
 - Blog: [reasonw.github.io](http://limbo0000.github.io/limbo/)    
 - Gmail: [limbo0000@gmail.com](mailto:limbo0000@gmail.com )  
-- Github: [https://github.com/limbo0000/](https://github.com/limbo0000/)
+- Github: [github.com/limbo0000/](https://github.com/limbo0000/)
 
  
 <center>
