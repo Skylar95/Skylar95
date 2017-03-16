@@ -4,8 +4,9 @@ title: "About Me"
 description: "认真生活"
 header-img: "img/5.jpg"
 ---
+### 我是杨策元
 <center>
-我是杨策元，目前是西北工业大学一名本科生.
+目前是西北工业大学一名本科生.
 致力于深度学习方向，希望在该领域做出一点微小的贡献。
 </center>
 
